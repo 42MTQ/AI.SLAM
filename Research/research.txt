@@ -1,0 +1,2 @@
+Includes the research that was conducted to realize this project and to gain the necessary knowledge needed to complete a project of this size.
+#

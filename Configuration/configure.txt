@@ -1,0 +1,1 @@
+It is going to cointain all the files that are needed for configurations. Sensor configuration / parameter configuration etc.

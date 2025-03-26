@@ -1,0 +1,80 @@
+# OAK-D Camera Overview
+
+The OAK-D is a state-of-the-art AI vision camera designed by Luxonis, combining stereo depth perception with a high-resolution RGB camera. It offers real-time on-device neural network inferencing and computer vision capabilities, making it ideal for robotics, automation, and AI-based applications.
+
+## Key Features
+
+- **On-Device AI Processing**: 4 TOPS of processing power (1.4 TOPS dedicated to AI tasks).
+- **Stereo Depth Perception**: Uses two grayscale cameras for depth estimation.
+- **High-Resolution RGB Camera**: Features a 12MP sensor with autofocus.
+- **Efficient Connectivity**: USB-C for power and data transfer.
+- **Compact & Robust Design**: Industrial-grade aluminum housing with Gorilla Glass front.
+
+## Camera Specifications
+
+### RGB Camera
+- **Sensor**: IMX378
+- **Resolution**: 12MP (4056x3040)
+- **Field of View (DFOV/HFOV/VFOV)**: 81° / 69° / 55°
+- **Focus**: Autofocus (8cm - ∞)
+- **Max Framerate**: 60 FPS
+- **Shutter Type**: Rolling
+- **Sensor Size**: 1/2.3”
+- **F-Number**: 1.8 ± 5%
+- **Effective Focal Length**: 4.81mm
+- **Pixel Size**: 1.55µm
+
+### Stereo Depth Cameras
+- **Sensor**: OV9282
+- **Resolution**: 1MP (1280x800)
+- **Field of View (DFOV/HFOV/VFOV)**: 81° / 72° / 49°
+- **Focus**: Fixed-focus
+- **Max Framerate**: 120 FPS
+- **Shutter Type**: Global
+- **Sensor Size**: 1/4”
+- **F-Number**: 2.0 ± 5%
+- **Effective Focal Length**: 2.35mm
+- **Pixel Size**: 3.0µm
+
+## Stereo Depth Perception
+
+- **Baseline**: 7.5 cm
+- **Depth Range**: ~70 cm to 12 m
+- **Minimum Depth Perception**:
+  - ~20 cm (400P with extended disparity)
+  - ~40 cm (400P or 800P with extended disparity)
+  - ~80 cm (800P)
+- **Median Depth Accuracy**:
+  - Below 4 m: <2% absolute depth error
+  - 4 m - 7 m: <4% absolute depth error
+  - 7 m - 10 m: <6% absolute depth error
+
+## Power Consumption
+
+- **Base Consumption (Camera Streaming)**: 2.5W - 3W
+- **AI Subsystem**: Up to 1W
+- **Stereo Depth Pipeline**: Up to 0.5W
+- **Video Encoding**: Up to 0.5W
+
+*Reducing FPS lowers power consumption.*
+
+## Physical Characteristics
+
+- **Dimensions**: 110 x 54.5 x 33 mm
+- **Weight**: 115 g
+- **Housing**: Industrial-grade aluminum with front Gorilla Glass
+- **Mounting Options**:
+  - 1/4" tripod mount
+  - 75mm M4 VESA mount
+
+## Package Includes
+- 1 x OAK-D Camera
+- 1 x USB-C Cable
+- 1 x Quick Start Guide
+
+## Additional Resources
+- [Luxonis Documentation](https://docs.luxonis.com/projects/hardware/en/latest/pages/BW1098OAK.html)
+- [OAK-D Product Page](https://shop.luxonis.com/products/oak-d)
+- [OAK-D-S2 (Successor)](https://shop.luxonis.com/products/oak-d-s2)
+- [OAK-D-Pro](https://shop.luxonis.com/products/oak-d-pro)
+

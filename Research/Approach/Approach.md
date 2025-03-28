@@ -146,6 +146,40 @@ Final Verdict: Is This SLAM Setup Good for Outdoor Fields?
 
     GPS/RTK is available for global localization / bounding box for the field to be traversed by the robot.
 
+Optional: Implement AI Based Feature Tracking to combat ORB3 feature tracking challenges for textureless arable fields that do not provide substantial features to extract distinct features for SLAM.
+
+How AI-Based Feature Tracking Helps:
+
+    Textureless Environments:
+
+        In agricultural fields, there are large areas with minimal texture (e.g., flat soil, uniform crops), which makes it hard for feature detectors like ORB to track stable points across frames.
+
+        AI-based feature trackers like SuperGlue or LoFTR can detect and match features robustly even in low-texture environments.
+
+    AI-Based Features:
+
+        SuperGlue: A deep-learning-based method that leverages a Graph Neural Network (GNN) to match image patches even in challenging conditions. It is less dependent on traditional keypoints and can handle blurred, uniform, or feature-poor environments.
+
+        LoFTR: This model provides feature matching without relying on distinct keypoints, which works well when the environment is uniform or lacks clear edges.
+
+    Integrating AI with ORB-SLAM:
+
+        You can combine AI feature tracking with ORB-SLAM3 to improve loop closure detection and long-term mapping. In this approach:
+
+            ORB-SLAM can still handle odometry and real-time tracking.
+
+            AI-based feature tracking (like SuperGlue) can be introduced specifically for loop closure detection and feature matching, especially when ORB struggles in areas with sparse features.
+
+Benefit:
+
+    By implementing AI-based feature tracking, you improve robustness in feature-poor environments, which is crucial for maintaining accurate localization and mapping in fields like arable vegetable farms where textures are often homogeneous and hard to distinguish.
+
+Summary:
+
+    Primary SLAM Backbone: ORB-SLAM3 with IMU (for tracking and odometry).
+
+    AI-Based Feature Enhancement: Use SuperGlue or LoFTR for loop closure detection and feature matching in challenging environments.
+
 ### **Justification for Final Choice**
 
 The chosen approach **leverages NVIDIA's GPU acceleration**, making it more efficient than CPU-based solutions. Additionally:

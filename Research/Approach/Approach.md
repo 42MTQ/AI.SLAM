@@ -101,6 +101,51 @@ To evaluate the best SLAM pipeline, we compared several approaches based on **ac
    - ✅ **GTSAM graph optimization** improves long-term drift correction.  
    - ✅ **Supports real-time OctoMap occupancy grid mapping**.
 
+
+
+Challenges in Outdoor Arable Fields ⚠
+
+1️⃣ Vegetation Causes Visual Challenges
+
+    ORB/SIFT-based visual SLAM relies on feature tracking, which might struggle in vegetation-dense areas due to:
+
+        Repetitive textures (e.g., leaves look similar).
+
+        Motion blur from wind.
+
+        Varying lighting conditions (sunlight shadows).
+        🔹Possible Solution:
+
+    Consider deep-learning-based feature extraction (e.g., SuperGlue or DROID-SLAM)
+
+2️⃣ Stereo Depth Limitation in Open Fields
+Stereo relies on disparity (difference between left & right camera images).
+In large, open fields, features in the far distance may not generate good depth estimates.
+🔹Possible Solution:
+
+Complement with GPS or RTK-GPS for absolute positioning.
+
+Use multi-frame stereo fusion (integrate multiple frames to improve depth).
+
+3️⃣ Rolling Terrain & Vegetation Occlusion
+If the field has uneven terrain, stereo cameras may struggle with depth accuracy.
+Tall crops (corn, wheat) might occlude the view, causing mapping gaps.
+🔹Possible Solution:
+
+IMU fusion with depth can improve estimates.
+
+Add ground-facing depth sensors (e.g., ToF or radar) for better ground profiling.
+
+Final Verdict: Is This SLAM Setup Good for Outdoor Fields?
+
+✅ YES, IF:
+
+    Crops are structured (e.g., neatly arranged vegetable rows).
+
+    Wind & lighting changes are handled (using AI-based features or sensor fusion).
+
+    GPS/RTK is available for global localization / bounding box for the field to be traversed by the robot.
+
 ### **Justification for Final Choice**
 
 The chosen approach **leverages NVIDIA's GPU acceleration**, making it more efficient than CPU-based solutions. Additionally:

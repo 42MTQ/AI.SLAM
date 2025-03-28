@@ -1,0 +1,52 @@
+[2025-03-27 10:39:14.551932] [0x000038ec] [trace]   Embedded OCIO configuration file: 'C:\Users\havoc\Downloads\Meshroom\Meshroom-2023.3.0\aliceVision/share/aliceVision/config.ocio' found.
+Program called with the following parameters:
+ * contrastFiltering =  Unknown Type "enum aliceVision::feature::EFeatureConstrastFiltering"
+ * describerPreset =  Unknown Type "enum aliceVision::feature::EImageDescriberPreset"
+ * describerQuality =  Unknown Type "enum aliceVision::feature::EFeatureQuality"
+ * describerTypes = "dspsift"
+ * forceCpuExtraction = 1
+ * gridFiltering = 1
+ * input = "C:/dev/AI.SLAM/ThirdParty/MeshroomCache/CameraInit/41f30f9b496c31e53973bbdb9651c38e171de93d/cameraInit.sfm"
+ * maskExtension = "png"
+ * maskInvert = 0
+ * masksFolder = ""
+ * maxCoresAvailable =  Unknown Type "unsigned int" (default)
+ * maxMemoryAvailable = 18446744073709551615 (default)
+ * maxNbFeatures = 0 (default)
+ * maxThreads = 0
+ * output = "C:/dev/AI.SLAM/ThirdParty/MeshroomCache/FeatureExtraction/80c7a2bf43d1f8523a67b1e6e41148e24f9fa092"
+ * rangeSize = 40
+ * rangeStart = 0
+ * relativePeakThreshold = 0.02 (default)
+ * verboseLevel = "info"
+ * workingColorSpace =  Unknown Type "enum aliceVision::image::EImageColorSpace"
+
+Hardware : 
+	Detected core count : 16
+	OpenMP will use 16 cores
+	Detected available memory : 3738 Mo
+
+[10:39:14.553931][warning] Could not determine number of CUDA cards in this system
+[10:39:14.553931][warning] No CUDA-Enabled GPU.
+CUDA build version: 11.6
+0
+[10:39:14.557932][info] Job max memory consumption for one image: 939 MB
+[10:39:14.557932][info] Memory information: 
+	- Total RAM:     15.3555 GB
+	- Free RAM:      3.65068 GB
+	- Available RAM: 3.65068 GB
+	- Total swap:    131072 GB
+	- Free swap:     131068 GB
+[10:39:14.557932][info] Max number of threads regarding memory usage: 3
+[10:39:14.557932][warning] More than half of the RAM is used by other applications. It would be more efficient to close them.
+[10:39:14.557932][warning]  => 12 GB are used by other applications for a total RAM capacity of 15 GB.
+[10:39:14.557932][info] # threads for extraction: 3
+[10:39:14.935973][info] Extracting dspsift features from view 'C:/Users/havoc/Downloads/IMG_1473.png' [cpu]
+[10:39:14.976024][info] Extracting dspsift features from view 'C:/Users/havoc/Downloads/IMG_1475.png' [cpu]
+[10:39:14.984034][info] Extracting dspsift features from view 'C:/Users/havoc/Downloads/plantPNG.png' [cpu]
+[10:39:24.844345][info]       20000 dspsift features extracted from view 'C:/Users/havoc/Downloads/IMG_1475.png'
+[10:39:25.873528][info] Extracting dspsift features from view 'C:/Users/havoc/Downloads/IMG_1471.png' [cpu]
+[10:39:26.351667][info]       20000 dspsift features extracted from view 'C:/Users/havoc/Downloads/IMG_1473.png'
+[10:39:26.382376][info]       20000 dspsift features extracted from view 'C:/Users/havoc/Downloads/plantPNG.png'
+[10:39:34.369321][info]       20000 dspsift features extracted from view 'C:/Users/havoc/Downloads/IMG_1471.png'
+[10:39:34.373445][info] Task done in (s): 19.816000

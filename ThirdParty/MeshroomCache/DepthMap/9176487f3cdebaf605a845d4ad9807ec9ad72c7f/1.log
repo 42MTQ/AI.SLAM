@@ -1,0 +1,74 @@
+[2025-03-27 10:48:26.038202] [0x00004b7c] [trace]   Embedded OCIO configuration file: 'C:\Users\havoc\Downloads\Meshroom\Meshroom-2023.3.0\aliceVision/share/aliceVision/config.ocio' found.
+Program called with the following parameters:
+ * autoAdjustSmallImage = 1
+ * chooseTCamsPerTile = 1
+ * colorOptimizationEnabled = 1
+ * colorOptimizationNbIterations = 100
+ * customPatchPatternGroupSubpartsPerLevel = 0 (default)
+ * customPatchPatternSubparts =  Unknown Type "class std::vector<struct aliceVision::depthMap::CustomPatchPatternParams::SubpartParams,class std::allocator<struct aliceVision::depthMap::CustomPatchPatternParams::SubpartParams> >" (default)
+ * downscale = 2
+ * exportIntermediateCrossVolumes = 0
+ * exportIntermediateDepthSimMaps = 0
+ * exportIntermediateNormalMaps = 0
+ * exportIntermediateTopographicCutVolumes = 0
+ * exportIntermediateVolume9pCsv = 0
+ * exportIntermediateVolumes = 0
+ * exportTilePattern = 0
+ * imagesFolder = "C:/dev/AI.SLAM/ThirdParty/MeshroomCache/PrepareDenseScene/530a7a8892f0f0d465753004ee58db44dac72b47"
+ * input = "C:/dev/AI.SLAM/ThirdParty/MeshroomCache/StructureFromMotion/53c451498dbfa1223d4d86b5de55269acd2efe22/sfm.abc"
+ * maxCoresAvailable =  Unknown Type "unsigned int" (default)
+ * maxMemoryAvailable = 18446744073709551615 (default)
+ * maxTCams = 10
+ * maxViewAngle = 70
+ * minViewAngle = 2
+ * nbGPUs = 0
+ * output = "C:/dev/AI.SLAM/ThirdParty/MeshroomCache/DepthMap/9176487f3cdebaf605a845d4ad9807ec9ad72c7f"
+ * rangeSize = 12
+ * rangeStart = 12
+ * refineEnabled = 1
+ * refineGammaC = 15.5
+ * refineGammaP = 8
+ * refineHalfNbDepths = 15
+ * refineInterpolateMiddleDepth = 0
+ * refineMaxTCamsPerTile = 4
+ * refineScale = 1
+ * refineSigma = 15
+ * refineStepXY = 1
+ * refineSubsampling = 10
+ * refineUseConsistentScale = 0
+ * refineUseCustomPatchPattern = 0
+ * refineWSH = 3
+ * sgmDepthListPerTile = 1
+ * sgmDepthThicknessInflate = 0
+ * sgmFilteringAxes = "YX"
+ * sgmGammaC = 5.5
+ * sgmGammaP = 8
+ * sgmMaxDepths = 1500
+ * sgmMaxSimilarity = 1
+ * sgmMaxTCamsPerTile = 4
+ * sgmP1 = 10
+ * sgmP2Weighting = 100
+ * sgmScale = 2
+ * sgmSeedsRangeInflate = 0.2
+ * sgmStepXY = 2
+ * sgmStepZ = -1
+ * sgmUseConsistentScale = 0
+ * sgmUseCustomPatchPattern = 0
+ * sgmUseSfmSeeds = 1
+ * sgmWSH = 4
+ * tileBufferHeight = 1024
+ * tileBufferWidth = 1024
+ * tilePadding = 64
+ * verboseLevel = "info"
+
+Hardware : 
+	Detected core count : 16
+	OpenMP will use 16 cores
+	Detected available memory : 3237 Mo
+
+[10:48:26.041202][warning] Could not determine number of CUDA cards in this system
+[10:48:26.041202][warning] No CUDA-Enabled GPU.
+CUDA build version: 11.6
+[10:48:26.041202][error] cudaGetDeviceCount failed: CUDA driver version is insufficient for CUDA runtime version
+[10:48:26.041202][info] Can't find CUDA-Enabled GPU.
+[10:48:26.041202][error] This program needs a CUDA-Enabled GPU (with at least compute capability 2.0).

@@ -1,0 +1,66 @@
+<html><head>
+<link rel="stylesheet" type="text/css" href="http://jsxgraph.uni-bayreuth.de/distrib/jsxgraph.css" />
+<link rel="stylesheet" type="text/css" href="http://imagine.enpc.fr/~moulonp/style.css" /><script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jsxgraph/0.93/jsxgraphcore.js"></script>
+<title>[log] Sequential SfM reconstruction</title>
+</head>
+<h1>[log] Sequential SfM reconstruction</h1>
+<hr>Dataset info:Views count: 14<br><h3>Essential Matrix.</h3>
+
+<b>Robust Essential matrix:</b><br>-> View I:<br>id: 556685113<br>image path: C:/Users/havoc/Downloads/IMG_1485.png<br>-> View J:<br>id: 1518428374<br>image path: C:/Users/havoc/Downloads/IMG_1481.png<br><br>- Threshold: 7.13308<br>- Resection status: OK<br>- # points used for robust Essential matrix estimation: 960<br>- # points validated by robust estimation: 958<br>- % points validated: 0.997917<br><h3>Initial triangulation - Residual of the robust estimation.<br>Thresholded at: 7.13308</h3>
+<h3>Histogram of residuals</h3>
+
+<div id="InitialPairTriangulationKeptInfo" class="jxgbox" style="width:600px; height:300px;"></div>
+<script type="text/javascript">
+var board = JXG.JSXGraph.initBoard('InitialPairTriangulationKeptInfo', {boundingbox: [-10, 10, 10, -10], axis:true,showCopyright:false});
+board.suspendUpdate();
+var data0= [0.00000,0.55556,1.11111,1.66667,2.22222,2.77778,3.33333,3.88889,4.44444,5.00000,];
+var data1= [775.00000,507.00000,321.00000,159.00000,71.00000,47.00000,22.00000,11.00000,3.00000,0.00000,];
+board.createElement('chart', [ data0,data1], {chartStyle:'line,point',labels:[ data0,data1],strokeColor:'#0000ff',highlightStrokeColor:'#0000ff'});
+var p2 = board.create('point',[7.13308,0.00000], {fixed:true});
+var p3 = board.create('point',[7.13308,775.00000], {fixed:true});
+var li = board.create('line',[p2,p3], {strokeColor:'00ff00',strokeWidth:2});
+board.unsuspendUpdate();
+board.setBoundingBox([-1.00000,930.00000,6.00000,-155.00000]);
+</script>
+<hr><h4>Robust resection of view 1494829973: <br></h4>
+
+- Image path: C:/Users/havoc/Downloads/IMG_1486.png<br>- Threshold (error max): 18.0998<br>- Resection status: OK<br>- # points used for Resection: 430<br>- # points validated by robust estimation: 358<br>- % points validated: 0.832558<br><h4>Robust resection of view 1738696821: <br></h4>
+
+- Image path: C:/Users/havoc/Downloads/IMG_1483.png<br>- Threshold (error max): 75.4484<br>- Resection status: OK<br>- # points used for Resection: 161<br>- # points validated by robust estimation: 161<br>- % points validated: 1<br><h4>Robust resection of view 281118178: <br></h4>
+
+- Image path: C:/Users/havoc/Downloads/IMG_1484.png<br>- Threshold (error max): 27.1838<br>- Resection status: OK<br>- # points used for Resection: 553<br>- # points validated by robust estimation: 508<br>- % points validated: 0.918626<br><h4>Robust resection of view 705869872: <br></h4>
+
+- Image path: C:/Users/havoc/Downloads/IMG_1488.png<br>- Threshold (error max): 59.5908<br>- Resection status: OK<br>- # points used for Resection: 658<br>- # points validated by robust estimation: 638<br>- % points validated: 0.969605<br><h4>Robust resection of view 391404999: <br></h4>
+
+- Image path: C:/Users/havoc/Downloads/IMG_1482.png<br>- Threshold (error max): 7.70838<br>- Resection status: OK<br>- # points used for Resection: 907<br>- # points validated by robust estimation: 855<br>- % points validated: 0.942668<br><h4>Robust resection of view 1800807763: <br></h4>
+
+- Image path: C:/Users/havoc/Downloads/IMG_1477.png<br>- Threshold (error max): 15.3412<br>- Resection status: OK<br>- # points used for Resection: 40<br>- # points validated by robust estimation: 40<br>- % points validated: 1<br><h4>Robust resection of view 1213525360: <br></h4>
+
+- Image path: C:/Users/havoc/Downloads/IMG_1474.png<br>- Threshold (error max): 0<br>- Resection status: FAILED<br>- # points used for Resection: 1<br>- # points validated by robust estimation: 0<br>- % points validated: 0<br><h4>Robust resection of view 1213525360: <br></h4>
+
+- Image path: C:/Users/havoc/Downloads/IMG_1474.png<br>- Threshold (error max): 0<br>- Resection status: FAILED<br>- # points used for Resection: 1<br>- # points validated by robust estimation: 0<br>- % points validated: 0<br><hr><h3>Structure from Motion process finished.</h3>
+Structure from Motion statistics:<br>- # input images: 14<br>- # camera calibrated: 8<br>- # poses: 8
+<br>- # landmarks: 8207<br>- elapsed time: 1.756<br>- residual RMSE: 0.951058<h2>Histogram of reprojection-residuals</h2>
+
+<div id="3DtoImageResiduals" class="jxgbox" style="width:600px; height:300px;"></div>
+<script type="text/javascript">
+var board = JXG.JSXGraph.initBoard('3DtoImageResiduals', {boundingbox: [-10, 10, 10, -10], axis:true,showCopyright:false});
+board.suspendUpdate();
+var data0= [0.00000,0.51613,1.03226,1.54839,2.06452,2.58065,3.09677,3.61290,4.12903,4.64516,5.16129,5.67742,6.19355,6.70968,7.22581,7.74194,8.25806,8.77419,9.29032,9.80645,10.32258,10.83871,11.35484,11.87097,12.38710,12.90323,13.41935,13.93548,14.45161,14.96774,15.48387,16.00000,];
+var data1= [6160.00000,5014.00000,3516.00000,2123.00000,1115.00000,574.00000,303.00000,134.00000,84.00000,36.00000,28.00000,13.00000,11.00000,4.00000,1.00000,1.00000,2.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,0.00000,1.00000,];
+board.createElement('chart', [ data0,data1], {chartStyle:'line,point',labels:[ data0,data1],strokeColor:'#0000ff',highlightStrokeColor:'#0000ff'});
+board.unsuspendUpdate();
+board.setBoundingBox([-3.20000,7392.00000,19.20000,-1232.00000]);
+</script>
+
+<div id="3DtoTracksSize" class="jxgbox" style="width:600px; height:300px;"></div>
+<script type="text/javascript">
+var board = JXG.JSXGraph.initBoard('3DtoTracksSize', {boundingbox: [-10, 10, 10, -10], axis:true,showCopyright:false});
+board.suspendUpdate();
+var data0= [2.00000,3.25000,4.50000,5.75000,7.00000,];
+var data1= [6260.00000,1286.00000,565.00000,94.00000,2.00000,];
+board.createElement('chart', [ data0,data1], {chartStyle:'line,point',labels:[ data0,data1],strokeColor:'#0000ff',highlightStrokeColor:'#0000ff'});
+board.unsuspendUpdate();
+board.setBoundingBox([1.00000,7511.60000,8.00000,-1249.60000]);
+</script>
+</html>

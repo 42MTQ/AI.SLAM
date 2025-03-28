@@ -62,6 +62,10 @@ https://www.mdpi.com/1424-8220/21/21/7141#
 ## Point of Interest : Magische S -ABF Taste
 https://de.wikipedia.org/wiki/Magische_S-Abf-Taste
 
+## 4D Crop Monitoring: Spatio-Temporal Reconstruction for Agriculture
+
+https://arxiv.org/abs/1610.02482
+
 
 
 

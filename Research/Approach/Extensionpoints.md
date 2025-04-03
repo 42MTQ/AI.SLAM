@@ -1,4 +1,4 @@
-    # Extension Points : Optional
+# Extension Points : Optional
 
     1. Data Collection:
 
@@ -128,3 +128,13 @@
         Dynamic Object Detection: Recognizing and distinguishing moving objects (like vehicles or animals) from static features in the field.
 
         Use of Depth Information: For example, combining depth sensors or stereo vision to enhance the semantic segmentation with more spatial information.
+
+# Deep learning Visual odometry Solution
+
+VO methods currently rely on a heuristic design with several weeks of hyper parameterizing.
+
+To adress these issues VO is being refarmed as a sequentual decision making task and applying renforcement learning to adapt the vo precoess dynamically.
+
+Neural network oprating as an agent within the VO pipeline to make decision such as keyframe and grid size selection based on real time conditions.
+
+Our method minimizes reliance on heuristic choices using a reward function based on pose error, runtime, and other metrics to guide the system. Our RL framework treats the VO system and the image sequence as an environment, with the agent receiving observations from keypoints, map statistics, and prior poses.

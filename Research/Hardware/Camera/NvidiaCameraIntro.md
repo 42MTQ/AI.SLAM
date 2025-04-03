@@ -1,0 +1,1 @@
+https://developer.nvidia.com/blog/selecting-the-right-camera-for-the-nvidia-jetson-and-other-embedded-systems/

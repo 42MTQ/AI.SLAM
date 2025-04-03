@@ -66,6 +66,27 @@ https://de.wikipedia.org/wiki/Magische_S-Abf-Taste
 
 https://arxiv.org/abs/1610.02482
 
+## Master Slam
+https://arxiv.org/abs/2412.12392
+## Github
+https://github.com/rmurai0610/MASt3R-SLAM
+
+
+## Duster Gemoetric Vision 3D Made Easy
+https://arxiv.org/abs/2312.14132
+
+## Detector Free Local Matching / Local Feature Matching with Transformers
+
+https://zju3dv.github.io/loftr/
+
+## RL for Visual Odometry / Reinforcement Learning Meets Visual Odometry
+
+https://arxiv.org/abs/2407.15626
+
+Youtube Example :
+https://www.youtube.com/watch?v=pt6yPTdQd6M&t=1s
+
+
 
 
 

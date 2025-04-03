@@ -5,10 +5,32 @@ The unique challenges presented by dynamic and heterogeneous arable fields such 
 
 How can a SLAM approach be implemented to optimize perfomance and accuracy for localization and mapping in a dynamic outdoor environment like an arable vegetable field?
 
+
+## Challenge Description
+
+## Environment
+
+## Constraints
+
+### Solution Design
+
+### Hardware Placement
+
+### Pre- Hardware Selection Bias
+
+### Hardware Selection
+### Scientific Experiment Setups 
+### Ground Truth
+### SLAM Evaluation Metrics
+###  Map evaluation Metric
+
+
 ## Sub-Research Questions
 
 ### 1. Challenges of Dynamic Environments:
 **"What are the primary environmental challenges that affect SLAM performance in arable vegetable fields, such as crop density, terrain irregularities, and seasonal variations?"**
+
+
 
 ### 2. SLAM Algorithm Selection:
 **"Which SLAM algorithms (e.g., visual SLAM, LIDAR SLAM, or hybrid approaches) are best suited for the localization and mapping of arable vegetable fields, and why?"**

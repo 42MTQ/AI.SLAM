@@ -10,12 +10,14 @@ Ready to get started? Download the SDK through the Omniverse Launcher, pull it a
 
 Isaac Sim facilitates three essential workflows: generating synthetic data for training and fine-tuning robot foundation models, conducting software-in-the-loop testing for robot stacks, and enabling robot learning through Isaac™ Lab.
 
-### Download 
+### Download
 
 https://docs.isaacsim.omniverse.nvidia.com/4.5.0/installation/download.html
 
-
-#### Further Information 
+#### Further Information
 
 https://docs.isaacsim.omniverse.nvidia.com/latest/index.html
 
+##### Latest Isaac Sim realeases
+
+https://developer.nvidia.com/blog/advancing-robot-learning-perception-and-manipulation-with-latest-nvidia-isaac-release/

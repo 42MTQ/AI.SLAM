@@ -1,2 +1,0 @@
-# Orin Hardware Documentation
-

@@ -78,3 +78,43 @@ The OAK-D is a state-of-the-art AI vision camera designed by Luxonis, combining 
 - [OAK-D-S2 (Successor)](https://shop.luxonis.com/products/oak-d-s2)
 - [OAK-D-Pro](https://shop.luxonis.com/products/oak-d-pro)
 
+# DEPTH-AI Luxonis OAK-D Software Stack
+https://github.com/luxonis/depthai-ros
+Depthai ROS Repository
+
+## parakeet-ctc-1.1b-asr
+
+Model Overview
+
+Parakeet is a major step forward in the evolution of conversational AI. Its exceptional accuracy, coupled with the flexibility and ease of use offered by NeMo, empowers developers to create more natural and intuitive voice-powered applications. The possibilities are endless, from enhancing the accuracy of virtual assistants to enabling seamless real-time communication.
+
+## magpie-tts-multilingual
+Natural and expressive voices in multiple languages. For voice agents and brand ambassadors.+
+
+
+## Megatron 1b nmt
+Enable smooth global interactions in 36 languages.
+https://build.nvidia.com/nvidia/megatron-1b-nmt
+
+## cuopt
+World-record accuracy and performance for complex route optimization.
+
+Description
+
+NVIDIA cuOpt is an AI microservice that optimizes logistics routing to save enterprises money, increase revenue, and reduce carbon emissions. It offers dynamic rerouting, horizontal load-balancing, and robotic simulations, with sub second solver response times. cuOpt enables organizations to easily access world record accelerated optimization capabilities across multi- and hybrid cloud environments. It solves complex routing problems with multiple constraints and delivers new capabilities, empowering teams to make dynamic, data-driven decisions.
+
+## usdcode 
+https://build.nvidia.com/nvidia/usdcode/modelcard
+
+State-of-the-art LLM that answers OpenUSD knowledge queries and generates USD-Python code.
+Description:
+
+USD Code is an OpenUSD Python code generation and knowledge answering model that helps developers to write OpenUSD code and answer OpenUSD knowledge questions.
+
+The following NIM are used by USD Code:
+
+    Llama-3.1-70b-instruct
+    nv-embedqa-e5-v5
+
+Llama-3.1-70b-instruct is used to drive the code generation and the agentic workflow, while NVIDIA Retrieval QA E5 Embedding is used for Retrieval Augmented Generation (RAG) to answer OpenUSD knowledge questions, USD code generation, and high-level Helper Function-based code generation. Helper Functions provide high-level abstractions leveraging the USD API, enabling developers to efficiently manage complex tasks such as creating, modifying, and querying USD scene.
+

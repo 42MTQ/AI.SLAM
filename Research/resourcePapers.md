@@ -85,3 +85,12 @@ https://arxiv.org/abs/2407.15626
 
 Youtube Example :
 https://www.youtube.com/watch?v=pt6yPTdQd6M&t=1s
+
+
+## MU Preintegration on Manifold for Efficient Visual-Inertial Maximum-a-Posteriori Estimation
+
+https://www.researchgate.net/publication/314578434_IMU_Preintegration_on_Manifold_for_Efficient_Visual-Inertial_Maximum-a-Posteriori_Estimation
+
+## Factor Graphs and GTSAM:
+
+https://repository.gatech.edu/entities/publication/0c2ac17c-1df4-48fe-8532-8f746868934a

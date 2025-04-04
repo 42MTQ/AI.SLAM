@@ -7,17 +7,21 @@ An **Octomap approach** in **SLAM (Simultaneous Localization and Mapping)** is a
 ## 🔑 Key Concepts
 
 ### 📌 Octree Structure
+
 An **octree** is a hierarchical data structure where the space is recursively divided into smaller cubes (called "**octants**").  
 Each node in the tree represents a **cubic region** in 3D space, and the **size of each cube** can vary depending on the **resolution** of the map.
 
 ### 📌 Occupancy Grid
+
 Instead of using traditional **2D occupancy grids**, **Octomap** uses **3D grids**, allowing the map to represent **not only the floor** but also the **height and obstacles** in the environment.
 
 ### 📌 Probabilistic Representation
+
 Octomap employs a **probabilistic method** to represent the occupancy of each **voxel (volume element)**.  
 Each voxel has a **probability value** indicating whether it is **occupied or free**, which is continuously updated based on **sensor data** (such as **LiDAR** or **RGB-D cameras**).
 
 ### 📌 Efficient 3D Mapping
+
 Octomap allows robots to efficiently map **large-scale 3D environments** while using **limited memory**.  
 Only **occupied regions** are represented in **detail**, while **free space** is encoded at a **coarser resolution**.
 

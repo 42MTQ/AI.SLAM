@@ -16,19 +16,24 @@
 ## Workflow in Meshroom
 
 ### 1. **Add Images**
-   - Import images into the Meshroom workspace. Ensure your images have good overlap to help the software compute depth and 3D structure.
+
+- Import images into the Meshroom workspace. Ensure your images have good overlap to help the software compute depth and 3D structure.
 
 ### 2. **Align Images**
-   - This step involves the software matching features between images to create a sparse 3D model. The better the image alignment, the more accurate the reconstruction will be.
+
+- This step involves the software matching features between images to create a sparse 3D model. The better the image alignment, the more accurate the reconstruction will be.
 
 ### 3. **Build the 3D Model**
-   - Meshroom uses a series of nodes that process the images, including **Feature Extraction**, **Image Matching**, **Structure from Motion (SfM)**, and **Meshing** to generate the 3D model.
+
+- Meshroom uses a series of nodes that process the images, including **Feature Extraction**, **Image Matching**, **Structure from Motion (SfM)**, and **Meshing** to generate the 3D model.
 
 ### 4. **Refine the Model**
-   - Meshroom allows for refining the mesh with additional tools such as smoothing, meshing, and texture mapping.
+
+- Meshroom allows for refining the mesh with additional tools such as smoothing, meshing, and texture mapping.
 
 ### 5. **Export the Model**
-   - Once the model is generated, you can export it to common 3D formats like **OBJ**, **FBX**, or **PLY**.
+
+- Once the model is generated, you can export it to common 3D formats like **OBJ**, **FBX**, or **PLY**.
 
 ## Advanced Tips
 
@@ -40,8 +45,7 @@
 
 Meshroom is a powerful tool for creating 3D models from 2D images using photogrammetry. With a GPU and good-quality images, you can easily produce accurate 3D models for various applications like AR/VR, game development, or even robotics.
 
+## Reference
 
-
-# Reference
 https://sketchfab.com/blogs/community/tutorial-meshroom-for-beginners
 

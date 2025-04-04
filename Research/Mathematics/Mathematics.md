@@ -1,6 +1,6 @@
 # Cholesky Decomposition
 
-*Based on Marco Taboga, PhD*
+## Based on Marco Taboga, PhD
 
 ## Definition
 

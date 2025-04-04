@@ -37,7 +37,6 @@ Here, you will find detailed documentation about the design and development of a
 
 This part contains details about the custom SLAM approach that was designed and build by myself. It was designed to perfectly fit the needs of agricultural robotics and to face the challenges of its difficult environment.
 
-
 - [SLAM Setup](SLAM/setup.md)
 - [Mapping and Localization](SLAM/mapping-localization.md)
 - [Verification and Validation](SLAM/verification-validation.md)
@@ -57,5 +56,3 @@ Here you will find the overall documentation for your research, including reflec
 - [Research Portfolio](inidividual/research-portfolio.md)
 - [SLAM Approach Report](individual/approach-report.md)
 - [Final Report](inidividual/final-report.md)
-
-

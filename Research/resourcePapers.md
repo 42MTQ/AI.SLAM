@@ -53,6 +53,7 @@ https://link.springer.com/article/10.1007/s10846-023-01816-3
 https://arxiv.org/pdf/2104.14938
 
 ## FAST SEMANTIC SEGMENTATION OF 3D POINT CLOUDS WITH STRONGLY VARYING DENSITY
+
 https://isprs-annals.copernicus.org/articles/III-3/177/2016/
 
 ## LiDAR Positioning Algorithm Based on ICP and Artificial Landmarks Assistance
@@ -60,6 +61,7 @@ https://isprs-annals.copernicus.org/articles/III-3/177/2016/
 https://www.mdpi.com/1424-8220/21/21/7141#
 
 ## Point of Interest : Magische S -ABF Taste
+
 https://de.wikipedia.org/wiki/Magische_S-Abf-Taste
 
 ## 4D Crop Monitoring: Spatio-Temporal Reconstruction for Agriculture
@@ -67,12 +69,16 @@ https://de.wikipedia.org/wiki/Magische_S-Abf-Taste
 https://arxiv.org/abs/1610.02482
 
 ## Master Slam
+
 https://arxiv.org/abs/2412.12392
+
 ## Github
+
 https://github.com/rmurai0610/MASt3R-SLAM
 
 
 ## Duster Gemoetric Vision 3D Made Easy
+
 https://arxiv.org/abs/2312.14132
 
 ## Detector Free Local Matching / Local Feature Matching with Transformers
@@ -83,9 +89,9 @@ https://zju3dv.github.io/loftr/
 
 https://arxiv.org/abs/2407.15626
 
-Youtube Example :
-https://www.youtube.com/watch?v=pt6yPTdQd6M&t=1s
+Youtube Example:
 
+https://www.youtube.com/watch?v=pt6yPTdQd6M&t=1s
 
 ## MU Preintegration on Manifold for Efficient Visual-Inertial Maximum-a-Posteriori Estimation
 

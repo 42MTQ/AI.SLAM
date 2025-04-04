@@ -68,8 +68,6 @@ Microboot1 (MB1) runs on BPMP and is the first boot software component loaded by
 
 NVIDIA owns MB1, and provides it as a binary in the Jetson BSP package. You can configure its behavior for a specific platform through its Boot Configuration Table, MB1-BCT.
 
-
-
 ### MB2
 
 MB2 is the Bootloader component that executes after MB1 and has the following variants:
@@ -126,7 +124,6 @@ The following diagram describes the major aspects of UEFI boot flow.
 
 ### Cold Boot Sequence
 
-
-
 ### Partition Configuration
+
 https://docs.nvidia.com/jetson/archives/r35.4.1/DeveloperGuide/text/AR/BootArchitecture/PartitionConfiguration.html

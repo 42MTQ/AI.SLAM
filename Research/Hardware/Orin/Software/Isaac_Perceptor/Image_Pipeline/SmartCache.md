@@ -15,23 +15,22 @@ To implement Smart Cache, just use one of the ImagePipelineWithCache subclasses,
 Note
 
 If Smart Cache is used for speeding up validation during training, replace_percent should be set to 0.
-### Capacity
+
+## Capacity
 
 The first issue to consider is that training datasets can be very large. Hence, we must decide how much to keep in memory. That means the cache capacity must be configurable. Another issue is that all data items are repeatedly used with equal chance in the original workflow. If the cache is not big enough to hold all items, the items that cannot fit in the cache will still be subject to the slowness of IO.
-#### Replacement
+
+### Replacement
 
 Our solution is gradual replacement of cache contents. At any time, the cache pool only keeps a subset of the whole dataset. In each epoch, only the items in the cache are used for training. This ensures that data needed for training is readily available, keeping GPU resources busy. Note that cached items may still have to go through a non-deterministic transform sequence before being fed to GPU. At the same time, another thread is preparing replacement items by applying the transform sequence to items not in cache. Once one epoch is completed, Smart Cache replaces the same number of items with replacement items.
 
 Smart Cache uses a simple “running window” algorithm to determine the cache content and replacement items. Let N be the configured number of objects in cache; and R be the number of replacement objects (R = ceil(N * r), where r is the configured replace rate).
-##### Example
+
+#### Example
 
 Suppose the dataset contains 100 items. Based on the image sizes and your computer’s RAM capacity, you decide to keep 50 items in cache with a replacement rate of 0.1 (10%). So, in each round, training will use the 50 items in cache, and the replacer will prepare 5 replacement items. After each round, 5 items in the cache are replaced with the 5 replacements.
 
 For a segmentation task based on this scenario, the image_pipeline in the train section of train_config.json could look like this:
-
-            
-
-            
 
 "image_pipeline": {
   "name": "SegmentationImagePipelineWithCache",
@@ -48,13 +47,7 @@ For a segmentation task based on this scenario, the image_pipeline in the train 
   }
 }
 
-        
-
 This can be compared to the image_pipeline configuration without SmartCache:
-
-            
-
-            
 
 "image_pipeline": {
   "name": "SegmentationImagePipeline",
@@ -69,14 +62,12 @@ This can be compared to the image_pipeline configuration without SmartCache:
   }
 }
 
-        
-
 Please note that in addition to the two new parameters to configure for SegmentationImagePipelineWithCache, num_cache_objects and replace_percent, the values for num_workers and prefetch_size have changed. The value of num_workers can be experimented with to determine the best value, but prefetch_size should be set to 0 when SmartCache is used.
 Note
 
 num_cache_objects should be divisible by output_batch_size otherwise the last batch will be smaller and reduce efficiency.
 
-###### Analysis
+#### Analysis
 
 Suppose your model takes a total of M steps. Without Smart Cache, each step takes a long time and has to go through data loading from disk, deterministic transforms, and non-deterministic transforms.
 
@@ -88,4 +79,3 @@ Practical tips
     If too low, the window will move too slowly, hence possibly needing more epochs for convergence.
 
     If the data set is large and num_cache_objects for the total number of objects to keep cached in memory is set too high, the operating system may use virtual memory on disk for swapping and that will slow everything down massively.
-

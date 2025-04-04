@@ -14,7 +14,8 @@ This top level GitHub organization host repositories for officially supported ba
     https://github.com/triton-inference-server/model_navigator
 
 
-## Deep Learning Examples 
+## Deep Learning Examples
+
 https://github.com/NVIDIA/DeepLearningExamples
 
 ### Getting Started

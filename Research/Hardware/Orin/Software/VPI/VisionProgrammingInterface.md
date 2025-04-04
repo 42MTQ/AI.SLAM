@@ -12,9 +12,6 @@ VPI provides seamless zero-copy memory mapping among the supported device backen
 
 VPI supports easy interoperation with existing projects that make use of OpenCV and NVIDIA® CUDA® SDK libraries, among others. This allows for gradual replacement of existing computing tasks with faster VPI equivalents.
 
-
-
-
 ## Getting Started
 
 https://docs.nvidia.com/vpi/installation.html

@@ -3,4 +3,3 @@
 ## Reference
 
 https://misorobotics.com/newsroom/flippy-meets-nvidia-isaac-enhanced-motion-planning-in-robotic-kitchen-assistants/
-

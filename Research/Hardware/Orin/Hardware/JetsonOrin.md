@@ -10,5 +10,6 @@ Each Jetson module is a computing system packaged as a plug-in unit (a System on
 
 Starting with NVIDIA Jetson Linux, JetPack bundles the Jetson platform software. Jetson Linux provides the Linux kernel, bootloader, NVIDIA drivers, flashing utilities, sample file system, and more for the Jetson platform.
 
-## Flashing 
+## Flashing
+
 https://docs.nvidia.com/jetson/archives/r36.4/DeveloperGuide/SD/FlashingSupport.html#sd-flashingsupport

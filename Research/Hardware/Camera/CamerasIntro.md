@@ -104,6 +104,3 @@ This document covers various camera features and concepts in machine vision, rob
 - **GenICam**: Interoperability standard for machine vision systems.
 - **USB3 Vision**: A high-speed transfer standard for USB 3.0.
 
----
-
-This structured Markdown file can be easily viewed and edited in **Visual Studio Code (VSC)** with built-in Markdown rendering. You can also preview the formatted file in VSC to check the visual representation.

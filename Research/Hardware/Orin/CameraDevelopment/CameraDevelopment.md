@@ -1,142 +1,71 @@
-# Camera Development
+# Camera Development Guide for Jetson
 
-This topic describes the camera software solution included in NVIDIA® Jetson™ Linux.
+This guide provides information on how to develop and integrate camera solutions for NVIDIA Jetson platforms, focusing on the process of configuring and enabling camera support on Jetson systems.
 
-## Camera Development
+## Overview
 
-This topic describes the camera software solution included in NVIDIA® Jetson™ Linux.
+The NVIDIA Jetson platform supports a wide range of camera types, including:
+- **CSI (Camera Serial Interface)** Cameras
+- **USB Cameras**
+- **Ethernet Cameras (GigE Vision)**
+- **MIPI Cameras**
 
-    Camera Software Development Solution
-        Camera Architecture Stack
-        Camera API Matrix
-        Approaches for Validating and Testing the V4L2 Driver
-            Applications Using libargus Low-Level APIs
-            Applications Using GStreamer with the nvarguscamerasrc Plugin
-            Applications Using GStreamer with V4L2 Source Plugin
-            Applications Using V4L2 IOCTL Directly
-        ISP Configuration
-        Infinite Timeout Support
-        Symlinks Changed by Mesa Installation
-        Other References
-    Sensor Software Driver Programming
-        Camera Core Library Interface
-        Direct V4L2 Interface
-        Camera Modules and the Device Tree
-            To add camera modules to a device tree
-            Module Properties
-        Individual Imaging Devices
-            Device Properties
-            Example Piece-Wise Linear Compression Function
-            Example Digital Overlap WDR Exposure Frame (3840×2160)
-            Port Binding
-            Sensor Pixel Clock
-            SerDes Pixel Clock
-            Port Index
-        V4L2 Kernel Driver (Version 1.0)
-            Macro Definitions
-            Sensor-Private Data
-            Configuring Regmap
-            Configuring Controls
-            To link the controls to their control handlers
-            Setting Up Control Registers
-            Power Functions
-            Setting Up the V4L2 Subdevice and Camera Common
-            Control Handlers
-            Device Tree Parser
-            Media Controller Setup
-            Sensor Driver Probing
-            Setup of Media Controller
-            Removing Sensor Drivers
-        V4L2 Kernel Driver (Version 2.0)
-            Macro Definitions
-            Sensor-Private Data
-            Register map (regmap)
-            Sensor Controls
-            Exposure Controls
-            Fixed Point Format
-            Control Handlers
-            Setter Control Handlers (for Writing Settings)
-            Fill-String Control Handlers (for Reading Settings)
-            How Controls Are Implemented
-            Registering the Controls
-            How to provide the link to the control handlers
-            Setting Up Registers for the Control Handler
-            Read-Write Wrapper in the Register
-            Power Functions
-            Stream Functions
-            Miscellaneous Functions
-            Control Operations
-            Boot-Time Initialization
-        Loadable Kernel Module (LKM)
-            To configure a sensor driver as a loadable module
-            To load a new sensor module
-        Kernel Configuration
-        Device Registration
-            Prerequisites
-            Device-tree overlay
-            To Create and Apply a DTB Overlay File
-            Using the Jetson-IO Tool
-            Using the Main Platform Device Tree File
-            To register a device using the main platform device tree file
-        Verifying the V4L2 Sensor Driver
-            To run a v4l2-compliance test
-            To run a v4l2-ctl test
-        Debugging Tips
-            To verify that driver name matches the name in the Device Tree
-            To verify that all device names match the device tree
-            To verify that the Device tree values match the hardware
-            To verify that functions run to completion
-            To verify that default values are correctly linked
-            To verify that control register values are correct
-            To verify that mode-specific settings are correct
-            To verify that I2C accesses are working properly
-            Configuring the Sensor Driver as a Loadable Kernel Module (LKM)
-        Mode Tables
-            To add a register mode table
-            Register mode table considerations
-        Camera Sensor Drivers Porting
-            How to find differences between release 28 and the current release
-            Changes for the V4L2 API
-            Changes to Device Tree Properties
-            Porting version 1.0 drivers to version 2.0
-            Device Tree
-            Driver
-    Jetson Virtual Channel with GMSL Camera Framework
-        Reference Setup
-        GMSL Protocol
-        GMSL Camera
-        CSI Connectivity
-            Jetson AGX Orin
-            Jetson Xavier NX Series
-            Jetson AGX Xavier Series
-        Hardware Module Connectivity
-        Software Framework and Programming
-            Driver Framework
-            Device Tree Programming
-        Constraints
-        Validation
-        Known Issues
-            General Issues
-            Xavier-Specific
-            Plugin Manager Board ID
-    Argus NvRaw Tool
-        Prerequisites for Use
-        Camera Sensor Modes
-        nvargus_nvraw Command
-            nvargus_nvraw Usage
-            Basic Examples
-            Displaying Sensor Information
-            Capturing Images
-            Other Operations
-            Limitations
-    Camera Driver Porting
-        Configuration Changes
-        Sensor Driver File Name Changes
-        Guarding Kernel Version-Specific Code
-        dev_err() Function
-        I2C API
-        NVIDIA Capture Driver Code Path
+The guide provides detailed instructions for setting up and troubleshooting camera systems on Jetson devices, ensuring proper integration for computer vision, robotics, and AI applications.
 
-### Reference
+## Supported Camera Interfaces
 
-https://docs.nvidia.com/jetson/archives/r35.4.1/DeveloperGuide/text/SD/CameraDevelopment.html
+### 1. **CSI Cameras (Camera Serial Interface)**
+   - Jetson systems support CSI cameras for high-speed video capture and efficient power use. CSI cameras are commonly used in embedded systems like drones, robots, and IoT devices.
+   - **NVIDIA’s Jetson cameras** and third-party CSI modules are compatible with Jetson.
+
+### 2. **USB Cameras**
+   - USB cameras are easily integrated into Jetson devices. 
+   - Standard USB cameras can be accessed using V4L2 (Video4Linux2) and image_transport in ROS.
+
+### 3. **Ethernet Cameras (GigE Vision)**
+   - GigE Vision cameras are supported for industrial and large-scale installations, often used in robotics and industrial automation.
+   - **GigE Vision Protocol** is used for high-speed, long-distance data transmission.
+
+### 4. **MIPI Cameras**
+
+- MIPI cameras typically require specific drivers and may be used in mobile devices or custom embedded systems.
+
+## Camera Interface Setup
+
+### 1. **CSI Camera Setup**
+
+- To configure CSI cameras, ensure that the correct drivers are installed for Jetson’s camera interface.
+- Use **Jetson Multimedia API** to access and control camera functionality.
+- **GStreamer** can be used for video streaming and processing.
+
+### 2. **USB Camera Setup**
+
+- USB cameras can be configured through **V4L2** and **image_transport** for ROS.
+- If needed, use `usb_cam` or `v4l2_camera` ROS packages to interface with cameras.
+- Configuration might include tuning parameters such as resolution, frame rate, and sensor settings.
+
+### 3. **Ethernet Camera Setup**
+
+- Ethernet cameras use the **GigE Vision protocol** and can be configured for high-performance, low-latency video capture.
+
+### 4. **MIPI Camera Setup**
+
+- MIPI cameras often require specific **NVIDIA drivers** for Jetson and should be connected via the MIPI CSI connector.
+
+## Troubleshooting Tips
+
+- **Check Driver Compatibility**: Ensure the camera drivers are compatible with Jetson hardware and software.
+- **Check Power Consumption**: Ensure the camera is properly powered and connected to the correct interfaces.
+- **Adjust Camera Settings**: Tweak the resolution, frame rate, and other parameters based on the application.
+
+## Camera Development Tools
+
+- **Jetson Multimedia API**: Provides access to high-level camera functionality, including video encoding and decoding.
+- **GStreamer**: Used for building custom pipelines for camera data streaming.
+- **V4L2**: A standard Linux API for controlling video capture devices.
+
+## Conclusion
+
+Developing and integrating cameras on Jetson platforms involves selecting the appropriate camera interface (CSI, USB, Ethernet, or MIPI), installing the right drivers, and configuring the system for video capture and processing. This enables developers to create vision-based applications for robotics, AI, and industrial solutions.
+
+For more details, refer to the [full camera development guide](https://docs.nvidia.com/jetson/archives/r35.4.1/DeveloperGuide/text/SD/CameraDevelopment.html).

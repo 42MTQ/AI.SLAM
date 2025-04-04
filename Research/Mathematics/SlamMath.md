@@ -110,7 +110,8 @@ $$
 \min_{x} \sum_{(i,j) \in \mathcal{E}} \| x_j - x_i - z_{ij} \|^2
 $$
 
-Techniques used:
+Techniques used
+
 - **ICP (Iterative Closest Point)**
 - **RANSAC for feature matching**
 

@@ -1,9 +1,8 @@
-#  Cloud - Native on Jetson
+# Cloud - Native on Jetson
+
 https://developer.nvidia.com/embedded/jetson-cloud-native
 
 ## Description
-
-
 
 Cloud-Native technologies offer the flexibility and agility needed for rapid product development and continual product upgrades.
 

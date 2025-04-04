@@ -23,4 +23,3 @@ You can now sync sources that are related to Jetson Linux from the NVIDIA Git se
 ## Reference
 
 https://docs.nvidia.com/jetson/archives/r36.4/DeveloperGuide/SD/WorkingWithSources.html
-

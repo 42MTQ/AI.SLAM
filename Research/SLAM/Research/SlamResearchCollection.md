@@ -1,4 +1,4 @@
-## **1. ORB-SLAM3 (Feature-Based Visual SLAM)**
+# **1. ORB-SLAM3 (Feature-Based Visual SLAM)**
 
 ✅ **Pros:**
 
@@ -101,7 +101,7 @@
 
 Based on the requirements **(handling dynamic vegetation, robust outdoor mapping, real-time feasibility, precise localization for robotic arm movements, and integration with NVIDIA Orin)**, the **two most promising approaches are:**
 
-### **1️⃣ LIO-SAM (LiDAR + IMU SLAM)**
+## **1️⃣ LIO-SAM (LiDAR + IMU SLAM)**
 
 🔹 **Why?**
 
@@ -136,13 +136,7 @@ Based on the requirements **(handling dynamic vegetation, robust outdoor mapping
 
 If  **focus is purely on accuracy and robustness** → **LIO-SAM (LiDAR-Inertial SLAM)**  
 
-
-
-
 If  **focus is real-time performance on Orin with AI enhancements** → **NVIDIA Isaac ROS Visual SLAM**
-
-
-
 
 ## **🔍 Core Differences: LiDAR vs. Camera for SLAM**
 
@@ -192,19 +186,12 @@ Since your robot is fixed on one axis and **moves in a circular pattern**, your 
 - **AI-based feature tracking to improve robustness in dynamic environments.**
 - **Optional:** IMU for additional motion tracking.
 
-
-
-
-
-----
 ## **🔗 Hybrid SLAM: Combining LIO-SAM & Isaac ROS Visual SLAM**
 
 A **sensor-fusion approach** using **LiDAR + Camera + IMU** would provide: ✅ **High-precision 3D mapping** (LiDAR)  
 ✅ **Robust visual feature tracking** for plant rows, objects (camera)  
 ✅ **Loop closure correction & AI-based enhancement** (Isaac AI)  
 ✅ **Better resilience to environmental changes** (e.g., wind, lighting)
-
-----
 
 ### **🛠 How to Implement a Hybrid SLAM System?**
 
@@ -260,9 +247,6 @@ If you want a **highly robust SLAM system for mapping and localizing crops, the 
 - **Use Isaac ROS Visual SLAM for AI-driven feature tracking & loop closure.**
 - **Combine both via ROS 2 sensor fusion** for **best accuracy, robustness, and adaptability**.
 
------
-
-
 ## **🧩 System Architecture**
 
 ### **1️⃣ Sensor Inputs**
@@ -282,19 +266,12 @@ If you want a **highly robust SLAM system for mapping and localizing crops, the 
 - Use **ROS 2 `robot_localization` package** to **merge odometry data** from both SLAM outputs.
 - Combine maps from **LiDAR SLAM (point cloud) + Visual SLAM (feature-based) → Unified 3D Map**.
 
-
-----
-
-
 **Loop closure detection** in SLAM is often unreliable in arable fields due to:
 
 1️⃣ **Dynamic Changes** – Wind moves leaves, plants grow, and seasonal changes affect visual features.  
 2️⃣ **Repetitive Patterns** – Rows of crops look similar, leading to incorrect loop closures.  
 3️⃣ **Lighting Variations** – Sunlight and cloud cover create inconsistent image features.  
 4️⃣ **Lack of Static Landmarks** – No stable buildings or objects for visual loop closure.
-
-----
-
 
 ### **🛠 Alternative Approaches Instead of Traditional Loop Closure**
 
@@ -307,19 +284,11 @@ Instead of relying on **feature-based loop closure** (like in Isaac ROS Visual S
 |**Deep Learning-Based Feature Matching**|AI-based landmark detection instead of traditional feature matching|Adapts to field changes over time|Requires training dataset|
 |**Sliding Window Map Updates**|Keep a **small history buffer** instead of full global map for localization|Reduces drift without global corrections|Can accumulate small errors over time|
 
-
-
-### IDEA:
-----
+### IDEA
 
 **Use LIO-SAM (LiDAR + IMU) for local mapping**  
 🔹 **Fuse RTK-GPS (if available) to anchor global positioning**  
 🔹 **Use an adaptive landmark detection method (AI-based or handcrafted feature filters)**
-
-
-
-
-----
 
 ### **🔧 Why Exclude Heavy Rain & Night?**
 

@@ -5,6 +5,7 @@ A curated collection of advanced NVIDIA tools, AI models, and robotics-related e
 ---
 
 ## 📑 Table of Contents
+
 - [🚀 Possible Extensions](#-possible-extensions)
   - [📑 Table of Contents](#-table-of-contents)
   - [🎞️ Video Search and Summarization Agent](#️-video-search-and-summarization-agent)

@@ -5,6 +5,7 @@ This guide provides information on how to develop and integrate camera solutions
 ## Overview
 
 The NVIDIA Jetson platform supports a wide range of camera types, including:
+
 - **CSI (Camera Serial Interface)** Cameras
 - **USB Cameras**
 - **Ethernet Cameras (GigE Vision)**
@@ -15,16 +16,19 @@ The guide provides detailed instructions for setting up and troubleshooting came
 ## Supported Camera Interfaces
 
 ### 1. **CSI Cameras (Camera Serial Interface)**
-   - Jetson systems support CSI cameras for high-speed video capture and efficient power use. CSI cameras are commonly used in embedded systems like drones, robots, and IoT devices.
-   - **NVIDIA’s Jetson cameras** and third-party CSI modules are compatible with Jetson.
+
+- Jetson systems support CSI cameras for high-speed video capture and efficient power use. CSI cameras are commonly used in embedded systems like drones, robots, and IoT devices.
+- **NVIDIA’s Jetson cameras** and third-party CSI modules are compatible with Jetson.
 
 ### 2. **USB Cameras**
-   - USB cameras are easily integrated into Jetson devices. 
-   - Standard USB cameras can be accessed using V4L2 (Video4Linux2) and image_transport in ROS.
+
+- USB cameras are easily integrated into Jetson devices.
+- Standard USB cameras can be accessed using V4L2 (Video4Linux2) and image_transport in ROS.
 
 ### 3. **Ethernet Cameras (GigE Vision)**
-   - GigE Vision cameras are supported for industrial and large-scale installations, often used in robotics and industrial automation.
-   - **GigE Vision Protocol** is used for high-speed, long-distance data transmission.
+
+- GigE Vision cameras are supported for industrial and large-scale installations, often used in robotics and industrial automation.
+- **GigE Vision Protocol** is used for high-speed, long-distance data transmission.
 
 ### 4. **MIPI Cameras**
 

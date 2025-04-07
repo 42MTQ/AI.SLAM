@@ -373,3 +373,14 @@ https://discuss.luxonis.com/blog/3734-depth-accuracy-comparison-luxonis-oak-vs-s
 ## What are the advantages of using the Stereolabs ZED stereocameras over other depth cameras (eg. Intel Realsense) available in the market?
 
 https://support.stereolabs.com/hc/en-us/articles/4402102207383-What-are-the-advantages-of-using-the-Stereolabs-ZED-stereocameras-over-other-depth-cameras-eg-Intel-Realsense-available-in-the-market
+
+## Scientific Article Comparing RealSense and ZED for robotic applications
+
+Perspectives of RealSense and ZED Depth Sensors for Robotic
+Vision Applications
+Vladimir Tadic 1,* , Attila Toth 2, Zoltan Vizvari 3, Mihaly Klincsik 4, Zoltan Sari 4, Peter Sarcevic 5 ,
+Jozsef Sarosi 5 and Istvan Biro 
+
+## Bot-Shop Comparing Depth Cameras
+
+https://www.mybotshop.de/Depth-camerasZED-seriesIntel-RealSenseDepth-camera-comparisonZED-vs-Intel-RealSenseAccuracy-in-depth-camerasField-of-view-in-depth-camerasStereo-vision-depth-camerasRobotics-depth-sensing3D-scanning-camerasAugmented-reality-camerasCamera-accuracy-comparis

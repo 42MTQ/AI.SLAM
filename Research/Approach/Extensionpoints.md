@@ -14,13 +14,14 @@ First, you'll need a labeled dataset to train a semantic segmentation or object 
 - Sky or trees
 - Other relevant features like buildings, pathways, fences, etc.
 
-### Labeling Tools:
+### Labeling Tools
 
 - You can use tools like **Labelbox**, **CVAT**, or **LabelMe** for manual labeling.
 - **Object Detection**: Label bounding boxes around objects of interest (e.g., plants or trees).
 - **Semantic Segmentation**: Assign class labels to each pixel (e.g., plant or soil for every pixel in the image).
 
-### Dataset Example:
+### Dataset Example
+
 For arable field mapping, you might have images like:
 
 - Crop rows labeled as "plant".
@@ -28,11 +29,11 @@ For arable field mapping, you might have images like:
 - Weeds or rocks labeled as "obstacles".
 - Background like sky, fences labeled accordingly.
 
-## 2. Model Selection and Training:
+## 2. Model Selection and Training
 
 Once you have the labeled dataset, you can move forward with training a model that can classify or segment these labels in real-time during the SLAM process.
 
-### Model Options:
+### Model Options
 
 - **Semantic Segmentation (Pixel-level classification)**:
 - Use models like **DeepLabV3+**, **FCN (Fully Convolutional Networks)**, or **U-Net** for pixel-wise labeling.
@@ -41,7 +42,7 @@ Once you have the labeled dataset, you can move forward with training a model th
 - Use **YOLO (You Only Look Once)**, **Faster R-CNN**, or **SSD (Single Shot Multibox Detector)** for detecting and classifying objects (like individual plants or obstacles).
 - These models output bounding boxes that you can use to understand object locations and types.
 
-### Training:
+### Training
 
 - **Preprocessing**:
 - Normalize and augment your images (e.g., using flips, rotations, scaling) to make the model more robust.

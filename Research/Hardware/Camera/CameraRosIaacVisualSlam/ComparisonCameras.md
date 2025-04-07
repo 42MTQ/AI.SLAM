@@ -362,6 +362,14 @@ NVIDIA Jetson Orin and Xavier Platforms
 Capture Card Power
 Via CSI port of the Jetson Orin AGX
 
-## Software Differences / Opportunities
+## Comparison Resources
 
+Accuracy Comparison:
 
+https://docs.luxonis.com/hardware/platform/depth/depth-accuracy/#Accuracy%20comparison
+
+https://discuss.luxonis.com/blog/3734-depth-accuracy-comparison-luxonis-oak-vs-stereolab-zed-vs-intel-realsense
+
+## What are the advantages of using the Stereolabs ZED stereocameras over other depth cameras (eg. Intel Realsense) available in the market?
+
+https://support.stereolabs.com/hc/en-us/articles/4402102207383-What-are-the-advantages-of-using-the-Stereolabs-ZED-stereocameras-over-other-depth-cameras-eg-Intel-Realsense-available-in-the-market

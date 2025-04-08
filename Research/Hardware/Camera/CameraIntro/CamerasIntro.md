@@ -104,3 +104,6 @@ This document covers various camera features and concepts in machine vision, rob
 - **GenICam**: Interoperability standard for machine vision systems.
 - **USB3 Vision**: A high-speed transfer standard for USB 3.0.
 
+## Focal Length of Cameras
+
+Both, the magnification and the angle of view, or how much of the scene will be caught, depend on the focal length of the lens. Magnification increases and the field of view narrows as the focal length increases. More expansive angles of view and lower magnifications result in a shorter focal length.

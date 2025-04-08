@@ -1,5 +1,18 @@
 # 📡 Proposal: Robot Vision System
 
+## Superiority of ZED vs Intel
+Picture 1 and 2 Intel RealSense
+Picture 3 and 4 ZED Cameras
+
+![ZED Caemras are  picture set 3 and 4 while Intel is 1 and 2 respectively](CameraConfiguration\ZED\PaintingDepthMeasurement.png)
+
+## Conclusion
+
+Based on the scientific article and the findings presented above, the ZED cameras remain superior when dealing with ranges starting from 1 or 2m +.
+
+IntelRealSense provide cheaper solutions. That is why I chose them as a sub system for the actuator vision system. 
+As they are sufficient and more cost efficient.
+
 ## 🚜 ZED X for Outdoor Navigation
 
 - **Optimized for outdoor use** – Rugged build, excellent weather/dust resistance, and strong performance in direct sunlight (a common challenge for depth cameras).
@@ -63,3 +76,7 @@
   - Weed targeting
 - Use the **ZED SDK + ROS 2** for navigation and mapping.
 - Use the **RealSense ROS 2 wrapper** for manipulator vision tasks and point cloud-based object detection.
+
+## Extensive Comparison Research on ZED VS INTEL
+
+Can be found under CameraRosIsaacVisualSLAM/Comparing 

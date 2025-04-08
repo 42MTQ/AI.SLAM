@@ -4,7 +4,7 @@
 Picture 1 and 2 Intel RealSense
 Picture 3 and 4 ZED Cameras
 
-![ZED Caemras are  picture set 3 and 4 while Intel is 1 and 2 respectively](CameraConfiguration\ZED\PaintingDepthMeasurement.png)
+![ZED Caemras are  picture set 3 and 4 while Intel is 1 and 2 respectively](PaintingDepthMeasurement.png)
 
 ## Conclusion
 

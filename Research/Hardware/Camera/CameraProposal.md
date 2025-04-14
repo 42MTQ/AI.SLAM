@@ -1,6 +1,7 @@
 # 📡 Proposal: Robot Vision System
 
 ## Superiority of ZED vs Intel
+
 Picture 1 and 2 Intel RealSense
 Picture 3 and 4 ZED Cameras
 

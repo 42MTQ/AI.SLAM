@@ -115,3 +115,12 @@ has to be context aware to make scene assumptions to define "anomaly".
 
 https://www.sciencedirect.com/science/article/pii/S0957417424030884
 
+### Reference Point
+
+https://docs.trycue.ai/getting-started
+
+#### Detecting into Identification
+
+After detecting an anomaly, it has to be identified and its respective recovery behaviour needs to be triggered.
+
+How to deal with unknown anomalies ?

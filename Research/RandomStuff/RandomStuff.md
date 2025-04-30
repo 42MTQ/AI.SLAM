@@ -21,3 +21,5 @@ Transfer learning is a machine learning technique where a model developed for on
 This allows the model to retain the feature extraction power of the pre-trained network while adapting to the new task efficiently.
 
 > ✅ Example: Starting with a 50-layer CNN trained for image classification, you swap the final layer and retrain on horse images to create a custom horse-identification model.
+
+

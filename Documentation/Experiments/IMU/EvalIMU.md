@@ -126,6 +126,7 @@ Example application:
 ResearchGate article provides a comprehensive example of how GMWM is applied to inertial navigation filter design. This article demonstrates how GMWM can be used to calibrate INS sensors and how the resulting models impact navigation filter performance.
 
 ## Allantools library check
+
 Allantool for data evaluation of IMU's
 
 ## Resources
@@ -141,3 +142,10 @@ Satellite Systems
 Teunissen
 Montenbruck
 Editors
+
+
+Research article
+A time-controllable Allan variance method
+for MEMS IMU
+
+

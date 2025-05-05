@@ -13,4 +13,3 @@ Sphinx is particularly well-suited for projects that use Python, but it can also
 - Easy cross-referencing between code, modules, and guides.
 
 Sphinx helps you create professional, maintainable documentation that scales with your project.
-

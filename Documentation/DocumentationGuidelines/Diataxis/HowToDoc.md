@@ -46,4 +46,3 @@ Explanation often needs to circle around its subject, and approach it from diffe
 Like reference, explanation belongs to the realm of propositional knowledge rather than action. However its purpose is to serve the user’s study - as tutorials do - and not their work.
 
 Often, writers of tutorials who are anxious that their students should know things overload their tutorials with distracting and unhelpful explanation. It would be much more useful to give the learner the most minimal explanation (“Here, we use HTTPS because it’s safer”) and then link to an in-depth article (Secure communication using HTTPS encryption) for when the user is ready for it.
-

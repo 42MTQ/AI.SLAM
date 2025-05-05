@@ -27,6 +27,7 @@ While a comprehensive survey of safe RL approaches are detailed in Garcia et.al 
 some of the most relevant ones here.
 
 #### Shielding the RL
+
 To that end, Alshiekh et.al [6] introduced a shield into the traditional RL setting. The shield is com-
 puted upfront from a given set of safety specifications and an abstraction of the agent’s environment
 dynamics. The shield restricts the agent as little as possible and forbids actions only if they could

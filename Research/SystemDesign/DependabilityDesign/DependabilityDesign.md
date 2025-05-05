@@ -65,7 +65,6 @@ In conclusion, although there is a clear distinction between automation and auto
 are different ways to increase the autonomy of a system. We note that similar ideas have been
 presented in References [57, 58] to study the degrees of autonomy of assistants.
 
-
 ##### References
 
 George Apostolakis. 2004. How useful is quantitative risk assessment? Risk Anal. 24, 3 (2004).
@@ -77,4 +76,3 @@ Asim Abdulkhaleq, Stefan Wagner, and Nancy Leveson. 2015. A comprehensive safety
 software-intensive systems based on STPA. arXiv:1612.03109 [cs.SE]. https://doi.org/10.48550/arXiv.1612.03109.
 
 NHTSA. 2007. Pre-crash scenario typology for crash avoidance research, DOT HS 810 767
-

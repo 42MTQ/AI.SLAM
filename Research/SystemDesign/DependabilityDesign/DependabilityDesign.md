@@ -76,3 +76,5 @@ Asim Abdulkhaleq, Stefan Wagner, and Nancy Leveson. 2015. A comprehensive safety
 software-intensive systems based on STPA. arXiv:1612.03109 [cs.SE]. https://doi.org/10.48550/arXiv.1612.03109.
 
 NHTSA. 2007. Pre-crash scenario typology for crash avoidance research, DOT HS 810 767
+
+TODO:Cleanup

@@ -65,3 +65,8 @@ the Construction and Analysis of Systems, pages 331–346. Springer, 2003
 u Feng, Marta Kwiatkowska, and David Parker. Automated learning of probabilistic assump-
 tions for compositional reasoning. In International Conference on Fundamental Approaches
 to Software Engineering, pages 2–17. Springer, 2011
+
+TODO: Cleanup. Provoke Thought. I want to verify as much modular functionality as well as individual datastreams as broad and far as possible.
+TODO: Meaning: Isolate Data Streams Validate and Verify, as far as possible e.G.Blackboxes like agents.
+TODO: Meaning: Isolate Modular Functionality Verify and Validate. Identify break points, unsupervised states or probalistic results.
+TODO: Deep, Constant monitoring and diagnostics, needed for hyper parameterization and scientific research.

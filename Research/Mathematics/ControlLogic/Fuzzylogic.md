@@ -14,8 +14,7 @@ In summary, Fuzzy Logic is a mathematical method for representing vagueness and 
 
 In the boolean system truth value, 1.0 represents the absolute truth value and 0.0 represents the absolute false value. But in the fuzzy system, there is no logic for the absolute truth and absolute false value. But in fuzzy logic, there is an intermediate value too present which is partially true and partially false.
 
-
-### Use Case 
+### Use Case
 
 Fuzzy logic has also been used for multi-object optimization problems. Lakhdari and
 Sculfort [8] define a hierarchical model for optimizing a manufacturing system based on

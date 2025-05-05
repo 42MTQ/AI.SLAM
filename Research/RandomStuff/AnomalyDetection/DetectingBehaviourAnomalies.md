@@ -110,7 +110,6 @@ https://github.com/hkayann/Real-time-Anomaly-Detection-in-Industrial-Robotic-Arm
 
 has to be context aware to make scene assumptions to define "anomaly".
 
-
 ### ML Approach learning to derive sense from datastreams
 
 https://www.sciencedirect.com/science/article/pii/S0957417424030884

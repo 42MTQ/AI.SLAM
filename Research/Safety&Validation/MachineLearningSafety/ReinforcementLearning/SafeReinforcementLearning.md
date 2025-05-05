@@ -99,3 +99,5 @@ Clement Gehring and Doina Precup. Smart exploration in reinforcement learning us
 solute temporal difference errors. In Proceedings of the 2013 international conference on
 Autonomous agents and multi-agent systems, pages 1037–1044. International Foundation for
 Autonomous Agents and Multiagent Systems, 2013.
+
+TODO: Cleanup

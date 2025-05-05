@@ -4,7 +4,7 @@ Challenges encountered for complex application testing. Unsolved area of testing
 
 ## Why is it hard?
 
-raditional scenario based
+Traditional scenario based
 testing methods fall short of providing the desired confidence level, mainly due to the combinatorial
 explosion of possible situations to be tested in autonomous systems. The non-determinism and com-
 plexity of the input space and the context in which the autonomous system will operate makes it hard
@@ -58,3 +58,5 @@ before it can mature.
 Reference:
 Christian Berger and Bernhard Rumpe. Engineering autonomous driving software. arXiv
 preprint arXiv:1409.6579, 2014.
+
+TODO:Cleanup

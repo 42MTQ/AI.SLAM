@@ -36,3 +36,5 @@ of information or control.
 
 To support such autonomous behaviors and decision making capabilities, IA systems will employ un-
 conventional implementation techniques such as machine learning.
+
+TODO: Example of autonomous flying partly applicable. There to provoke thoughts 

@@ -42,11 +42,10 @@ STPA's approach to safety and hazard analysis is particularly useful in autonomo
 
 By applying STPA, engineers can ensure that their autonomous robot functions safely and reliably in complex environments.
 
-#### SLAM Autonomous Map Generation and Localisation 
+#### SLAM Autonomous Map Generation and Localisation
 
 Applying STPA to SLAM-based Autonomous Robotics
 
-To understand how System-Theoretic Process Analysis (STPA) can be applied to your SLAM-based autonomous robotics project, let's walk through a simplified example of how to use STPA to identify hazards and safety constraints for your system. We will consider various subsystems of the robot, such as perception (SLAM), decision-making (navigation/planning), and actuation (robot movement), and analyze the potential risks in these areas.
 1. Define the System Boundaries
 
 For a SLAM-based autonomous robot, the system includes several interacting components:
@@ -91,8 +90,6 @@ Unsafe control actions are those that could lead to hazards in the system. For a
 
 3. Determine Causes of Unsafe Actions
 
-Once you've identified the unsafe control actions, the next step is to find out the potential causes behind these actions. These causes might stem from sensor issues, software bugs, hardware failure, or human error. Here are some possible causes for the unsafe control actions listed:
-
     Perception Issues:
 
         Cause: Sensor malfunction (e.g., camera failure, LiDAR sensor drift, or GPS inaccuracies).
@@ -126,8 +123,6 @@ Once you've identified the unsafe control actions, the next step is to find out 
         Cause: Lack of redundancy or fail-safe mechanisms in the emergency stop system.
 
 4. Develop Safety Constraints
-
-Now that we know the unsafe actions and their causes, the next step is to define safety constraints to prevent those unsafe actions from occurring. These constraints should guide the robot’s operation to ensure safety. Here are some safety constraints for your SLAM-based autonomous robot:
 
     Perception Constraints:
 
@@ -198,3 +193,6 @@ Example STPA Flow for Your SLAM-based Autonomous Robot
         Speed and control limits, especially in rugged terrain.
 
         Redundant emergency stop system with manual and automated triggers.
+
+        TODO: Cleanup
+        

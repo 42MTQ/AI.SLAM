@@ -59,3 +59,5 @@ ing. Journal of Machine Learning Research, 16(1):1437–1480, 2015.
 
 Perry Van Wesel and Alwyn E. Goodloe. Challenges in the verification of reinforcement learn-
 ing algorithms. Technical report, NASA, 2017
+
+TODO: Cleanup

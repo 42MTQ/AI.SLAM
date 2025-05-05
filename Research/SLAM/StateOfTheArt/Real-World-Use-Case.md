@@ -3,3 +3,5 @@
 ## Reference
 
 https://misorobotics.com/flippy/
+
+TODO: Showcase Flippy autonomous Kitchen helper.

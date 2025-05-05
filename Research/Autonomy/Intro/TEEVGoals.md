@@ -43,7 +43,7 @@ and recovery methods.
 
 ### Assurance Cases need to be reuseable
 
-eusable assurance case based on previous evidence “building blocks”
+Reusable assurance case based on previous evidence “building blocks”
 An assurance case can be defined as a structured argument, supported by evidence, intended to justify that a system is
 acceptably safe and secure.
 
@@ -63,3 +63,5 @@ automotive systems, and avionics systems. Much like a legal case presented in a 
 arguments linking evidence with claims of conformance to dependability-related requirements. 22 Several certification
 standards and guidelines in the defense, transportation (aviation, automotive, rail), and healthcare domains now
 recommend and/or mandate the development of assurance cases for software-intensive systems.23
+
+TODO: Resource Missing

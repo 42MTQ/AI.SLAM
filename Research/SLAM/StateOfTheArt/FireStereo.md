@@ -10,3 +10,5 @@ The Distortion of visual frames is still an ongoing problem.
 ### Reference
 
 https://firestereo.github.io/
+
+TODO: Very Interesting Project Example dealing with highly distorted sensor readings, and providing cleanup filter.

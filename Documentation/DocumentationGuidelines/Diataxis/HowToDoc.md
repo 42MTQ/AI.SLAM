@@ -1,6 +1,7 @@
 # Documentation
 
 https://diataxis.fr/
+
 Used this fraemeworks documentation philosophies.
 
 Diátaxis

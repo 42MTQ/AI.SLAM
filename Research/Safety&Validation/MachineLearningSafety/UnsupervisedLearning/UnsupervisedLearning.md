@@ -20,3 +20,5 @@ There is an interesting application for unsupervised learning where we do have a
 (although we will weaken this later) and this is a form of anomaly detection where we wish to compare
 an input encountered at runtime against a training set that consists entirely of “normal” inputs. The
 intent is to determine whether new inputs are normal or anomalous.
+
+TODO:Cleanup

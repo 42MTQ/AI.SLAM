@@ -6,4 +6,3 @@ Please refer to RealSense DepthQualityTesting White Paper for further informatio
 ## Depth Quality Tool
 
 GitHub: https://github.com/IntelRealSense/librealsense/tree/master/tools/depth-quality
-

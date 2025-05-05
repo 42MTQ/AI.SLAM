@@ -25,3 +25,5 @@ the order of a tenth of a second), while achieving long-term goals may take hund
 sands of cycles (e.g., to reach a destination). Obviously, when new goals are selected in a cycle,
 they must be compatible with those that have already been selected, but which have not yet been
 achieved.
+
+TODO:Cleanup

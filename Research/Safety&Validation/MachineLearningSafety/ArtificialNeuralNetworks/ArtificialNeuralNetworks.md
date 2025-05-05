@@ -79,3 +79,5 @@ analysis for deep feedforward neural networks. In NASA Formal Methods Symposium,
 Guy Katz, Clark Barrett, David Dill, Kyle Julian, and Mykel Kochenderfer. Reluplex: An
 efficient SMT solver for verifying deep neural networks. arXiv preprint arXiv:1702.01135,
 2017.
+
+TODO: Cleanup

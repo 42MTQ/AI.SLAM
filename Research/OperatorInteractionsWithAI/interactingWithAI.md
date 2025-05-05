@@ -1,9 +1,10 @@
 # Scenarios for interactings in an autonomous system
 
 Scenarios for operator interactions in autonomous systems
+
 ## Scenarios
 
-possible Scenarios for Operator Intervention
+Possible Scenarios for Operator Intervention
 
 ### Scenario 1
 

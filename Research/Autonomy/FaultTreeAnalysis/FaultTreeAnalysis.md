@@ -14,6 +14,7 @@ Fault Tree Analysis (FTA) is a top-down, deductive failure analysis method used 
 🤖 Application in Robotics:
 
 In robotics, especially for control logic and safety, FTA helps identify weaknesses in:
+
 1. Sensor Dependencies
 
     Top Event: "Robot navigates off course"

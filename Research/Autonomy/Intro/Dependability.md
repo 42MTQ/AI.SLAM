@@ -31,6 +31,7 @@ of Universal Coordinated Time as measured on the Naval Observatory’s atomic cl
 initial claim is just that: The computed spacecraft clock time is accurate to the actual time to
 within some number, X, microseconds. As shown, claims are represented in GSN as
 rectangles.
+TODO: Figure Missing
 
 ### Dependability Use cases
 

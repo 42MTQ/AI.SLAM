@@ -2,15 +2,15 @@
 
 FMEA helps systematically identify and mitigate potential failure points before deployment, especially in unpredictable environments like agricultural fields.
 
-## Why FMEA is relevant for SLAM in your project:
+## Why FMEA is relevant
 
 1. Sensor Reliability
 
 Failure Mode: RGB-D camera fails or gives corrupted depth data
 Effect: Inaccurate or incomplete map
 Preventive Action: Add sensor diagnostics, fallback to IMU or odometry when depth is missing
-2. Localization Drift or Loss
 
+2.Localization Drift or Loss
 Failure Mode: SLAM loses track due to visual aliasing (e.g., repetitive crops)
 Effect: Robot becomes "lost"
 Preventive Action: Integrate GPS loosely with SLAM, define recovery behavior, loop closure validation
@@ -43,6 +43,8 @@ When to Use It:
 
     After each major test session (to update with real-world failures)
 
+    TODO: Cleanup right thoughts needs project relevance.
+
 ## ⚖️ FMEA vs. HAZOP (Especially for Your SLAM-Based Project)
 
 Aspect	FMEA (Failure Modes and Effects Analysis)	HAZOP (Hazard and Operability Study)
@@ -54,7 +56,7 @@ Structure	Tabular, quantitative (RPN scores)	Guide-word based, qualitative (uses
 Best Used When	Analyzing hardware/software component reliability	Assessing system logic, operability, and unexpected interactions
 Example in SLAM	IMU fails → Pose estimate is wrong → Map error	What if map update rate is too low? What if sensor input is missing?
 Outcome	Prioritized list of failure modes with mitigation	List of potential deviations with causes, consequences, and safeguards
-🔍 For Your SLAM Project:
+🔍 For SLAM Project:
 
     Use FMEA to analyze sensor failures, communication issues, compute overload, node crashes, etc.
 
@@ -65,3 +67,5 @@ Outcome	Prioritized list of failure modes with mitigation	List of potential devi
         “What if the robot receives reversed velocity commands?”
 
         “What if the SLAM module outputs wrong pose under bright sunlight?”
+        TODO: Formatting
+        

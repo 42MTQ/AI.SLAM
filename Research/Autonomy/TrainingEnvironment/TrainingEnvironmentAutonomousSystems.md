@@ -15,6 +15,6 @@ water balance issues. Especially in combination with predictive con-
 cepts (e.g., Model-Predictive Control (MPC)), these approaches have been
 widely recognized and used in scientific and industrial use cases.
 
-## Figure 
+## Figure
 
 ![Autonomous Training Environment](/Research/Autonomy/pic/LogicalOverviewOfTrainingEnvironmentAutonomousSystems.png)

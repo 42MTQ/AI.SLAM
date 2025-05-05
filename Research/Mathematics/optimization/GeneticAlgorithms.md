@@ -19,4 +19,3 @@ genetic algorithms are often used for optimization tasks where traditional appro
     Robot Design: GAs can optimize physical design aspects (like limb lengths or joint configurations) for specific tasks, helping in co-design of hardware and control.
 
     Sensor Placement and Fusion: GAs help optimize sensor locations or how sensor data is combined for more accurate environmental perception.
-

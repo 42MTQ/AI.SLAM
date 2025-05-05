@@ -47,7 +47,7 @@ tem differ from case to case.
 
 ### Project Wide Autonmony Definition
 
-TODO: Define Autonomy uniquely for this applications use cases and how its realised.
+TODO: Define Autonomy uniquely for this applications use cases and how its realised. Provoke Thought.
 
 #### References
 

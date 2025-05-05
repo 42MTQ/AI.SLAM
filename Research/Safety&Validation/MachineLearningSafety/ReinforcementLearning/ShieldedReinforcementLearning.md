@@ -41,8 +41,6 @@ iteration process must be tractable. Reinforcement learning, on the other hand,
 can also be applied to black box systems, and its computational complexity is
 essentially independent of the complexities of the underlying dynamic system
 
-
-
 ### References
 
 Shielded Reinforcement Learning
@@ -51,3 +49,5 @@ Asger Horn Brorholt(B), Peter Gjøl Jensen, Kim Guldstrand Larsen,
 Florian Lorber, and Christian Schilling
 Department of Computer Science, Aalborg University, Aalborg, Denmark
 {asgerhb,pgj,kgl,florber,christianms}@cs.aau.dk
+
+TODO:Cleanup

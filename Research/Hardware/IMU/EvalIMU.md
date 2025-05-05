@@ -5,7 +5,7 @@
 Resource used for testing practices:
 https://www.researchgate.net/publication/224637354_An_efficient_method_for_evaluating_the_performance_of_MEMS_IMUs
 
-ommon inertial sensors/units testing in the lab can providesensor parameters such as noise density bias instability scale factor (SF) instability non-orthogonality non-linearity g-sensitivity of gyroscopes temperature sensitivities (bias and SF) 
+Common inertial sensors/units testing in the lab can providesensor parameters such as noise density bias instability scale factor (SF) instability non-orthogonality non-linearity g-sensitivity of gyroscopes temperature sensitivities (bias and SF) 
 
 (PDF) An efficient method for evaluating the performance of MEMS IMUs. Available from: https://www.researchgate.net/publication/224637354_An_efficient_method_for_evaluating_the_performance_of_MEMS_IMUs [accessed Apr 28 2025].
 
@@ -104,10 +104,6 @@ https://pdf.sciencedirectassets.com/274151/1-s2.0-S1000936115X00021/1-s2.0-S1000
 
 https://iopscience.iop.org/article/10.1088/1755-1315/1127/1/012006/pdf
 
-LOOK INTO AGAIN: EXAMPLE MODS
-The Generalized Method of Wavelet Moments for
-Inertial Navigation Filter Design
-
 ## Generalized Wavelet Moments
 
 The Generalized Method of Wavelet Moments (GMWM) is a technique used to characterize and model the stochastic errors of inertial sensors, like accelerometers and gyroscopes, in inertial navigation systems (INS). It's particularly effective for estimating complex stochastic error models that are difficult to capture with traditional methods like Allan variance. GMWM is often used in conjunction with other estimation techniques like Kalman filtering for INS/GNSS integration.
@@ -143,9 +139,7 @@ Teunissen
 Montenbruck
 Editors
 
-
 Research article
 A time-controllable Allan variance method
 for MEMS IMU
-
-
+TODO: CLeanup

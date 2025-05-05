@@ -1,5 +1,7 @@
 # Configuration on ESP32
 
+Configurations for connecting BNO085 with ESP32.
+
 ## Configurations
 
 BaudRate: monitor_speed = 115200
@@ -39,3 +41,5 @@ SCK	14	Free GPIO
 MOSI	13	Free GPIO
 MISO	12	Free GPIO
 SS/CS	15	Can be anything
+
+TODO: Cleanup

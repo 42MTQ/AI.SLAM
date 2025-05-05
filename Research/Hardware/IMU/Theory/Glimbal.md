@@ -1,4 +1,4 @@
-# Glimbal 
+# Glimbal
 
 A gimbal is a pivoted support that permits rotation of an object about an axis. A set of three gimbals, one mounted on the other with orthogonal pivot axes, may be used to allow an object mounted on the innermost gimbal to remain independent of the rotation of its support (e.g. vertical in the first animation). For example, on a ship, the gyroscopes, shipboard compasses, stoves, and even drink holders typically use gimbals to keep them upright with respect to the horizon despite the ship's pitching and rolling.
 

@@ -12,3 +12,5 @@ irregular input structures. In addition, it allows us to actually witness them a
 paradigm on how to define neural networks. Despite recent successes with LLMs on
 large-language corpuses, GNNs utilize their built-in structural inductive bias to derive
 accurate predictions even on only sparsely available data with low computational budget.
+
+TODO: Cleanup

@@ -25,7 +25,6 @@ design of experiments methods currently lacks the mathematical constructs capabl
 for non-deterministic autonomous software. Software systems require a risk-mitigation methodology offering the same
 spirit as Design of Experiments (DOE) while not relying entirely on statistical approaches.
 
-
 ### Runtime Behaviour Predeiction and Recovery
 
 However, for highly complex autonomous systems, an alternate method
@@ -54,7 +53,7 @@ assurance argument itself is valid.
 
  Research must be done to formalize assurance cases for the purposes of analysis and
 reuse, providing a comprehensive argument that all requirements have been satisfied, including safety, security,
-performance, etc. 
+performance, etc.
 
 The assurance case provides a means to structure the reasoning that engineers implicitly use to gain confidence that
 systems will work as expected. It also becomes a key element in the documentation of the system and provides a mapping
@@ -64,4 +63,3 @@ automotive systems, and avionics systems. Much like a legal case presented in a 
 arguments linking evidence with claims of conformance to dependability-related requirements. 22 Several certification
 standards and guidelines in the defense, transportation (aviation, automotive, rail), and healthcare domains now
 recommend and/or mandate the development of assurance cases for software-intensive systems.23
-

@@ -21,5 +21,3 @@ Technische Universit¨at Braunschweig, Germany
 7Center for Computer Applications in Aerospace Science and Engineering,
 German Aerospace Center, Germany
 (Communicated by Antonia Larese)
-
-###

@@ -1,1 +1,0 @@
-Contains the data that was used to realizte this project, the data used to train verify examplify and realize project.

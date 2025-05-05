@@ -13,3 +13,5 @@ Aruco are difficult to detect if they are far away or have significant tilt espe
 ## ArUco Generator
 
 https://mecaruco2.readthedocs.io/en/latest/notebooks_rst/Aruco/aruco_basics.html
+
+### Turned out to be completely useless basaed on accuracies and trouble in real implementations

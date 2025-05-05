@@ -7,6 +7,8 @@ outcomes for each input, or is intractably complex. Because of its size, this sp
 examined, or tested; it grows exponentially as all known conditions, factors, and interactions expand. Therefore there
 are currently no established metrics to determine various aspects of success or comparison to a baseline state
 enumerated.
+
+
  ATEVV Challenge 2 - Unpredictable Environments:
 The power of autonomous agents is the ability to perform in unknown, untested environmental conditions. Examples
 of environmental “stimuli” include actors capable of making their own decisions in response to autonomous system
@@ -17,6 +19,8 @@ environmental conditions. Adaptive autonomous algorithms have the potential to o
 brittleness in future dynamic, complex, and/or contested environments. However, this performance increase comes
 with the price of assuring correct behavior in a countless number of environmental conditions. This exacerbates the
 state-space explosion problem.
+
+
  ATEVV Challenge 3 - Emergent Behavior:
 Interactions between systems and system factors may induce unintended consequences. With complex, adaptive
 systems, how can all interactions between systems are captured sufficiently to understand all intended and unintended
@@ -26,6 +30,8 @@ test vector generation when considering adaptive decision-making in both discret
 variables in an unpredictable environment? Since emergent behavior can be produced by interactions between small,
 seemingly insignificant factors how can we provide test environments or test oracles that are of sufficient fidelity to
 examine and capture emergent behavior (in M&S, T&E, and continuous operations or run time testing)?
+
+
  ATEVV Challenge 4 - Human-Machine Communication:
 Handoff, communication, and interplay between operator and autonomy become a critical component to the trust and
 effectiveness of an autonomous system. Current certification processes eliminate the need for “trust” through

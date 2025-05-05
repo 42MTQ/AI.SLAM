@@ -13,7 +13,6 @@ This repository contains a SLAM (Simultaneous Localization and Mapping) implemen
   - [Testing](#testing)
   - [Contributing](#contributing)
   - [Data](#data)
- 
 
 ## Introduction
 
@@ -49,8 +48,8 @@ The repository is organized into the following directories:
 
 ## Testing
 
-
 Make sure the system is properly set up and dependencies are installed before running tests.
+
 ## Contributing
 
 We welcome contributions! To contribute:
@@ -66,6 +65,6 @@ License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-
 ## Data
+
 Datasets used for testing and validation. Datasets for training. Datasets for ground truth evaluation.

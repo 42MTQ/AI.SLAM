@@ -1,0 +1,76 @@
+name: Standard Research Task
+description: A general-purpose issue template for research tasks, experiments, or development items.
+title: "[Task] "
+labels: [research, needs triage]
+assignees: []
+
+body:
+  - type: input
+    id: title
+    attributes:
+      label: 📌 Task Title
+      description: Short, descriptive name for this task.
+      placeholder: e.g., Implement initial SLAM testing
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 🧠 Description
+      description: Describe what needs to be done or investigated.
+      placeholder: Describe the background, purpose, and scope of this task.
+    validations:
+      required: true
+
+  - type: textarea
+    id: objectives
+    attributes:
+      label: 🎯 Objectives
+      description: What does "done" look like? List expected results or outcomes.
+      placeholder: |
+        - Evaluate accuracy of SLAM on indoor dataset
+        - Integrate sensor stream into SLAM pipeline
+    validations:
+      required: false
+
+  - type: textarea
+    id: subtasks
+    attributes:
+      label: 🛠️ Subtasks / Steps
+      description: Break the work into smaller, trackable pieces.
+      placeholder: |
+        - [ ] Connect IMU via ROS 2
+        - [ ] Test data rate consistency
+        - [ ] Record bag file for validation
+    validations:
+      required: false
+
+  - type: textarea
+    id: resources
+    attributes:
+      label: 📚 Resources
+      description: Add links to documentation, datasets, research papers, or notes.
+      placeholder: |
+        - [ROS 2 Sensor Integration Guide](https://docs.ros.org/)
+        - [OpenVSLAM paper](https://arxiv.org/abs/1904.01849)
+    validations:
+      required: false
+
+  - type: input
+    id: deadline
+    attributes:
+      label: 📅 Deadline / Target Milestone
+      description: When should this issue be completed?
+      placeholder: YYYY-MM-DD or milestone name
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: 🧾 Notes / Discussion
+      description: Any additional notes, blockers, or early results.
+      placeholder: Write anything helpful here.
+    validations:
+      required: false

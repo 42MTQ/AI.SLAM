@@ -1,0 +1,90 @@
+name: Scientific Evaluation
+description: Template for documenting scientific evaluation of SLAM performance or related experiments.
+title: "[Evaluation] "
+labels: [evaluation, experiment]
+assignees: []
+
+body:
+  - type: input
+    id: metric
+    attributes:
+      label: 📐 Scientific Metric Under Evaluation
+      description: Name the primary scientific metric you're evaluating.
+      placeholder: e.g., Absolute Trajectory Error (ATE), Localization Drift
+    validations:
+      required: true
+
+  - type: textarea
+    id: observed-metrics
+    attributes:
+      label: 📊 Metrics to Observe
+      description: List and describe all relevant metrics you plan to evaluate.
+      placeholder: |
+        - ATE (Absolute Trajectory Error)
+        - RPE (Relative Pose Error)
+        - Loop Closure Accuracy
+        - Processing Speed (FPS)
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: 🌱 Evaluation Environment
+      description: Describe the test environment (indoor, outdoor, simulated, field conditions).
+      placeholder: |
+        - Test field: Rose greenhouse
+        - Indoor lab with reflective walls
+        - Simulated environment using Gazebo
+    validations:
+      required: true
+
+  - type: dropdown
+    id: experiment-type
+    attributes:
+      label: 🧪 Type of Experiment
+      description: Choose the type of experiment you're conducting.
+      options:
+        - Controlled (lab or simulated)
+        - Real-world (field)
+        - Benchmark dataset replay
+        - Stress test (worst-case)
+        - Comparative (algorithm vs. algorithm)
+    validations:
+      required: true
+
+  - type: textarea
+    id: procedure
+    attributes:
+      label: 📝 Procedure & Setup
+      description: Briefly outline how the experiment will be run (tools, commands, configurations).
+      placeholder: |
+        - Run ORB-SLAM3 with RGB-D input
+        - Record trajectory using TUM dataset format
+        - Analyze with evo_metrics
+    validations:
+      required: true
+
+  - type: textarea
+    id: results
+    attributes:
+      label: 📈 Observations / Results
+      description: Log early results or leave space to return later after running the test.
+      placeholder: |
+        - ATE: 0.045m on average
+        - FPS dropped during rapid movement
+        - Loop closure triggered 3x
+    validations:
+      required: false
+
+  - type: textarea
+    id: feedback
+    attributes:
+      label: 💬 Feedback / Thoughts
+      description: Your own thoughts, challenges faced, or possible follow-up actions.
+      placeholder: |
+        - Occlusion caused drift in outdoor tests
+        - Try adjusting voxel filter resolution
+        - Consider testing in a dustier environment
+    validations:
+      required: false

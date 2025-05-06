@@ -5,14 +5,6 @@ labels: [research, needs triage]
 assignees: []
 
 body:
-  - type: input
-    id: title
-    attributes:
-      label: 📌 Task Title
-      description: Short, descriptive name for this task.
-      placeholder: e.g., Implement initial SLAM testing
-    validations:
-      required: true
 
   - type: textarea
     id: description

@@ -1,0 +1,127 @@
+name: Software Use Case Implementation
+description: Implement and track specific software use cases based on the project requirements.
+title: "[Use Case Implementation] "
+labels: [development, feature, implementation, use case]
+assignees: []
+
+body:
+  - type: input
+    id: use-case-title
+    attributes:
+      label: 📝 Use Case Title
+      description: Provide a brief title for the use case being implemented.
+      placeholder: e.g., Implement Sensor Data Processing for SLAM
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case-description
+    attributes:
+      label: 🛠️ Use Case Description
+      description: Describe the specific functionality or use case that needs to be implemented.
+      placeholder: |
+        This use case is focused on implementing a ROS 2 node that processes sensor data from the robot's cameras and IMUs and feeds it to the SLAM algorithm.
+    validations:
+      required: true
+
+  - type: input
+    id: related-component
+    attributes:
+      label: 🔗 Related System Component
+      description: Specify the system component or module this use case will be part of.
+      placeholder: e.g., ROS 2 Node for Sensor Data Processing
+    validations:
+      required: true
+
+  - type: textarea
+    id: functionality
+    attributes:
+      label: ⚙️ Expected Functionality
+      description: Outline the functionality that will be delivered by this use case.
+      placeholder: |
+        - Collect sensor data from cameras and IMUs.
+        - Process the sensor data in real-time.
+        - Integrate data with SLAM algorithm.
+        - Provide processed data to navigation system for path planning.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: ✔️ Acceptance Criteria
+      description: Define the criteria that must be met for this use case to be considered complete.
+      placeholder: |
+        - The sensor data is correctly captured and processed with minimal latency.
+        - The processed data is fed into the SLAM algorithm with no errors.
+        - Real-time communication between ROS 2 nodes is established.
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: 🔧 Dependencies
+      description: List any external dependencies or services required for this use case to function.
+      placeholder: |
+        - ROS 2 (Humble)
+        - NVIDIA Orin SDK for sensor interfacing
+        - Custom ROS 2 node for data collection and processing
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation-details
+    attributes:
+      label: 🖥️ Implementation Details
+      description: Describe how the use case will be implemented.
+      placeholder: |
+        - Write a ROS 2 node that interfaces with the sensor drivers.
+        - Implement data pre-processing and filtering logic.
+        - Ensure communication between the node and SLAM algorithm via ROS topics.
+    validations:
+      required: true
+
+  - type: textarea
+    id: testing-strategy
+    attributes:
+      label: 🧪 Testing Strategy
+      description: How will this use case be tested? Describe unit, integration, and system tests.
+      placeholder: |
+        - Unit test for sensor data collection and validation.
+        - Integration test between ROS 2 node and SLAM algorithm.
+        - System test to evaluate overall performance in a simulation environment.
+    validations:
+      required: false
+
+  - type: textarea
+    id: challenges
+    attributes:
+      label: ⚠️ Challenges
+      description: Document any potential challenges or issues to watch out for during implementation.
+      placeholder: |
+        - Ensuring real-time processing and communication.
+        - Handling large amounts of sensor data without causing latency.
+    validations:
+      required: false
+
+  - type: textarea
+    id: code-review
+    attributes:
+      label: 📑 Code Review
+      description: Provide a link to the code review or request for peer review.
+      placeholder: |
+        - Pull request #34 for sensor data processing node
+    validations:
+      required: false
+
+  - type: textarea
+    id: next-steps
+    attributes:
+      label: 🔜 Next Steps
+      description: What are the next steps or follow-up actions after completing the use case?
+      placeholder: |
+        - Conduct integration testing with the SLAM system.
+        - Begin performance optimization based on test results.
+    validations:
+      required: false

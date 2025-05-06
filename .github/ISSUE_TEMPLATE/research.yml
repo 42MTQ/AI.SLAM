@@ -1,4 +1,4 @@
-name: Standard Research Task
+name: Research Task
 description: A general-purpose issue template for research tasks, experiments, or development items.
 title: "[Task] "
 labels: [research, needs triage]

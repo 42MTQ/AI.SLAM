@@ -1,0 +1,55 @@
+name: Feature Request / Enhancement
+description: Suggest an enhancement or new feature for the SLAM system.
+title: "[Enhancement] "
+labels: [enhancement, feature-request]
+assignees: []
+
+body:
+  - type: input
+    id: title
+    attributes:
+      label: 📌 Feature Title
+      description: A brief, clear name for the feature.
+      placeholder: e.g., Integrate IMU data for better localization
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 🧠 Feature Description
+      description: Describe the new feature or enhancement in detail.
+      placeholder: Describe the functionality and why it's important.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-benefit
+    attributes:
+      label: ✅ Expected Benefit / Impact
+      description: What will this feature improve? How will it affect the system?
+      placeholder: |
+        - Better handling of dynamic environments
+        - Improved accuracy in localization in GPS-denied areas
+    validations:
+      required: true
+
+  - type: textarea
+    id: resources
+    attributes:
+      label: 📚 Resources
+      description: Any links or research papers related to the feature.
+      placeholder: |
+        - [ROS 2 IMU integration guide](https://docs.ros.org/)
+    validations:
+      required: false
+
+  - type: textarea
+    id: related-issues
+    attributes:
+      label: 🔄 Related Issues
+      description: Link any issues or tasks related to this feature.
+      placeholder: |
+        - #123 Feature request for LiDAR integration
+    validations:
+      required: false

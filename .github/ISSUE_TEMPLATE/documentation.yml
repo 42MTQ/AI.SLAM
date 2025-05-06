@@ -1,0 +1,48 @@
+name: Documentation / Knowledge Sharing
+description: Document important information, guides, or insights about SLAM or related components.
+title: "[Doc] "
+labels: [documentation, knowledge-sharing]
+assignees: []
+
+body:
+  - type: input
+    id: doc-title
+    attributes:
+      label: 📑 Documentation Title
+      description: Title of the document or knowledge sharing piece.
+      placeholder: e.g., Tuning Parameters for ORB-SLAM3
+    validations:
+      required: true
+
+  - type: textarea
+    id: doc-description
+    attributes:
+      label: 🧠 Description
+      description: Describe the content of the document or information shared.
+      placeholder: |
+        - Guidelines for tuning ORB-SLAM3 parameters for optimal performance in indoor environments.
+    validations:
+      required: true
+
+  - type: textarea
+    id: detailed-content
+    attributes:
+      label: 📝 Detailed Content
+      description: Share the detailed steps, methods, or insights here.
+      placeholder: |
+        - Start with default ORB-SLAM3 parameters.
+        - Increase threshold for feature extraction to reduce false positives.
+        - Adjust loop closure thresholds to handle small environments.
+    validations:
+      required: true
+
+  - type: textarea
+    id: related-links
+    attributes:
+      label: 🔗 Related Links
+      description: Provide any related documentation, resources, or links.
+      placeholder: |
+        - [ORB-SLAM3 Documentation](https://github.com/raulmur/ORB_SLAM3)
+        - [SLAM Parameter Tuning Research](https://arxiv.org/abs/1234567)
+    validations:
+      required: false

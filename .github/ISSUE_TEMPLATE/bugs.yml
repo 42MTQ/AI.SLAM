@@ -1,0 +1,79 @@
+name: Bug Report
+description: Report a bug, error, or malfunction in the system or pipeline.
+title: "[Bug] "
+labels: [bug, needs triage]
+assignees: []
+
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: 🔍 Summary
+      description: Brief description of the bug.
+      placeholder: e.g., SLAM node crashes on startup with ORB-SLAM3
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 📋 Steps to Reproduce
+      description: Provide a list of steps so others can reproduce the bug.
+      placeholder: |
+        1. Launch SLAM node with `ros2 launch ...`
+        2. Move robot in environment
+        3. Observe error in terminal
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: ✅ Expected Behavior
+      description: What should have happened instead?
+      placeholder: The SLAM node should continue processing frames without crashing.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: ❌ Actual Behavior
+      description: Describe what actually happened.
+      placeholder: The node crashes with segmentation fault after receiving the third image frame.
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 📄 Logs / Error Messages
+      description: Paste relevant terminal output, stack traces, or log snippets.
+      placeholder: |
+        ```
+        [slam_node-1] Segmentation fault (core dumped)
+        [ros2_run] caught exception in launch
+        ```
+      render: shell
+    validations:
+      required: false
+
+  - type: input
+    id: environment
+    attributes:
+      label: 🧩 Environment
+      description: OS, ROS version, device type, etc.
+      placeholder: Ubuntu 22.04, ROS 2 Humble, NVIDIA Orin NX
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: 🧾 Additional Notes / Temporary Workarounds
+      description: Anything else you’ve tried or temporary fixes that worked.
+      placeholder: |
+        - Works when using the default camera config
+        - Crashes only on outdoor dataset
+    validations:
+      required: false

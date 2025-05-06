@@ -1,0 +1,64 @@
+name: Configuration / Parameter Tuning
+description: Track configuration changes and their effects on SLAM performance.
+title: "[Config] "
+labels: [parameter-tuning, configuration]
+assignees: []
+
+body:
+  - type: input
+    id: parameter-name
+    attributes:
+      label: ⚙️ Parameter Name
+      description: Name of the parameter being tuned.
+      placeholder: e.g., Feature detection threshold
+    validations:
+      required: true
+
+  - type: textarea
+    id: parameter-description
+    attributes:
+      label: 🧠 Parameter Description
+      description: What does this parameter control or affect?
+      placeholder: |
+        - Controls the sensitivity of feature detection in ORB-SLAM.
+    validations:
+      required: true
+
+  - type: input
+    id: original-value
+    attributes:
+      label: 🔢 Original Value
+      description: The value of the parameter before tuning.
+      placeholder: e.g., 30
+    validations:
+      required: true
+
+  - type: input
+    id: tuned-value
+    attributes:
+      label: 🔧 Tuned Value
+      description: The value of the parameter after tuning.
+      placeholder: e.g., 50
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: 📊 Impact / Effect
+      description: Describe how this tuning impacted SLAM performance.
+      placeholder: |
+        - ATE decreased from 0.035m to 0.020m after increasing the feature detection threshold.
+        - Processing time decreased by 10%.
+    validations:
+      required: true
+
+  - type: textarea
+    id: next-steps
+    attributes:
+      label: 🔄 Next Steps
+      description: Any further adjustments or actions to take based on this configuration.
+      placeholder: |
+        - Tune feature extraction to balance accuracy and speed.
+    validations:
+      required: false

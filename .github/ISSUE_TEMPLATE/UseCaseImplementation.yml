@@ -5,15 +5,7 @@ labels: [development, feature, implementation, use case]
 assignees: []
 
 body:
-  - type: input
-    id: use-case-title
-    attributes:
-      label: 📝 Use Case Title
-      description: Provide a brief title for the use case being implemented.
-      placeholder: e.g., Implement Sensor Data Processing for SLAM
-    validations:
-      required: true
-
+ 
   - type: textarea
     id: use-case-description
     attributes:

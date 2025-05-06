@@ -17,3 +17,5 @@ program correctness and debugging
 • So...
 – Design your code so that printed output can be captured
 and verified in your unit tests
+
+TODO: Add diagram of the TestFlow used to verify scientific metrics.

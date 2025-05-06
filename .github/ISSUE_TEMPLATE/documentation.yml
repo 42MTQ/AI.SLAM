@@ -5,14 +5,6 @@ labels: [documentation, knowledge-sharing]
 assignees: []
 
 body:
-  - type: input
-    id: doc-title
-    attributes:
-      label: 📑 Documentation Title
-      description: Title of the document or knowledge sharing piece.
-      placeholder: e.g., Tuning Parameters for ORB-SLAM3
-    validations:
-      required: true
 
   - type: textarea
     id: doc-description
